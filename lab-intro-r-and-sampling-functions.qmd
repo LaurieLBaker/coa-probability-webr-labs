@@ -10,7 +10,81 @@ filters:
 
 ## A Brief Intro to R
 
-## Useful Sampling Functions
+Computers are great at **storing** things and also doing things quickly and not getting tired! We will be using the language R to explore probability concepts throughout this course. 
+
+R can do basic operations for us like adding:
+
+```{webr-r}
+1 + 1
+```
+
+subtracting:
+
+```{webr-r}
+10 - 1
+```
+
+and exponentiating:
+
+```{webr-r}
+2^2
+```
+
+It can also store values in **objects**. 
+
+Let's make an assignment and inspect the object we created:
+
+```{webr-r}
+x <- 3 * 15
+
+x
+```
+
+We can then use the object we created:
+
+```{webr-r}
+x - 10
+```
+
+All R statements where you create objects - "assignments" have this form:
+
+`object_name <- value`
+
+A good way to remember it is when you see the code:
+
+```{webr}
+x <- 10
+```
+
+You can say "x gets 10". The value *10* is assigned using the assignment operator `<-` to our object 'x'.
+
+You will want to give your objects memorable names and it may be wise to adopt a convention for demarcating words in names:
+
+`i_like_snake_case`, `other.people.use.periods`, `othersUseCamelCase`
+
+R is a stickler when it comes to spelling but there are some tricks that can help.
+
+
+```{webr-r}
+why_did_i_choose_this_really_long_name <- 7.8
+```
+
+What happens if you spell it wrong?
+
+
+```{webr-r}
+why_didi_choose_this_really_long_name
+```
+
+Try starting to type the first few characters, press TAB, add more characters to narrow down the options, then press return
+
+```{webr-r}
+# delete me and add your own code
+
+```
+
+
+## Useful Sampling Functions for Probability
 
 Three useful functions
 
