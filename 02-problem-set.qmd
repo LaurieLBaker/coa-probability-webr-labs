@@ -1,0 +1,29 @@
+---
+title: "Problem set 2 - Combinations"
+date: "2024-09-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center")
+```
+
+---
+
+## Combinations
+
+
+### Question 1: Selecting a Trip Group
+
+The college is organizing a field trip, and 4 students need to be selected from a group of 10 students to attend. How many different groups of students can be selected for the trip?
+
+---
+
+### Question 2: Forming a Faculty-Student Committee
+
+A college is forming a new committee to improve campus facilities, which will consist of 5 members: 3 faculty members and 2 students. If there are 8 faculty members and 7 students available, how many ways can the committee be formed if it must include exactly 3 faculty members and 2 students?
+
+---
+
+### Question 3: Assigning Students to Dorm Rooms
+
+A dormitory has 8 rooms, 12 students need housing but only 8 can be assigned to these rooms. How many different ways can 8 students be chosen to get a room?

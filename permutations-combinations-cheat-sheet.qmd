@@ -1,0 +1,62 @@
+---
+title: "Permutations and Combinations Cheat Sheet"
+date: "2024-09-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center")
+```
+
+---
+
+**Combinations** and **permutations** are two fundamental concepts in probability and combinatorics that deal with the selection and arrangement of objects.
+
+### Key Differences Between Combinations and Permutations
+
+1. **Definition**:
+   - **Permutations** refer to the different ways in which a set of objects can be arranged, where the order *does* matter.
+   - **Combinations** refer to the different ways in which a set of objects can be selected, where the order *does not* matter.
+
+2. **Formula**:
+   - **Permutations Formula**:  
+     The number of permutations of \( r \) objects from a total of \( n \) objects is given by:
+     \[
+     P(n, r) = \frac{n!}{(n - r)!}
+     \]
+     Here, \( n! \) (n factorial) is the product of all positive integers up to \( n \), and \((n - r)!\) accounts for the objects that are not chosen.
+   
+   - **Combinations Formula**:  
+     The number of combinations of \( r \) objects from a total of \( n \) objects is given by:
+     \[
+     C(n, r) = \frac{n!}{r! \cdot (n - r)!}
+     \]
+     Here, \( r! \) accounts for the fact that the order in which the \( r \) objects are chosen does not matter.
+
+3. **Order Matters**:
+   - **Permutations**: The order of selection is important.  
+     For example, if you are arranging 3 books on a shelf, the sequence in which they are placed matters (`Book A, Book B, Book C` is different from `Book C, Book A, Book B`).
+   - **Combinations**: The order of selection is not important.  
+     For example, if you are forming a committee of 3 members out of 5 people, the sequence in which you pick the members does not matter (`Alice, Bob, Charlie` is the same as `Charlie, Alice, Bob`).
+
+4. **Use Cases**:
+   - **Permutations** are used when we need to determine the number of possible arrangements of a set of items where their order matters (e.g., seating arrangements, race rankings).
+   - **Combinations** are used when we need to determine the number of ways to select items from a set where their order does not matter (e.g., lottery numbers, selecting a team).
+
+### Examples
+
+1. **Permutations Example**:
+   You have 4 students and you want to arrange them in a line for a photo. How many different ways can this be done?
+   - Since the order matters, this is a permutation problem.
+   - The answer is \( P(4, 4) = 4! = 4 \times 3 \times 2 \times 1 = 24 \).
+
+2. **Combinations Example**:
+   You have 4 students and you want to select 2 of them to form a committee. How many ways can you do this?
+   - Since the order does not matter, this is a combination problem.
+   - The answer is \( C(4, 2) = \frac{4!}{2! \cdot (4 - 2)!} = \frac{4!}{2! \cdot 2!} = \frac{24}{4} = 6 \).
+
+### Summary
+
+- **Permutations** = Selection with arrangement (order matters).
+- **Combinations** = Selection without arrangement (order does not matter).
+
+Understanding whether the order is important or not is key to distinguishing between a combination and a permutation.

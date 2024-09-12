@@ -1,0 +1,101 @@
+---
+title: "Sampling Functions"
+format: html
+engine: knitr
+webr:
+  channel-type: "automatic"
+filters:
+  - webr
+---
+
+## A Brief Intro to R
+
+## Useful Sampling Functions
+
+Three useful functions
+
+1.  `sample()`: randomly picks out elements (items) from a vector
+
+Drawing from a box of tickets is easily simulated in R, since there is a convenient function `sample()` that does exactly what we need: draw tickets from a “box” (which needs to be a vector).
+
+**Arguments**
+
+– x: the vector to be sampled from, this must be specified
+
+– size: the number of items to be sampled, the default value is the length of x
+
+– replace: whether we replace a drawn item before we draw again, the default value is FALSE, indicating that we would draw without replacement. Example: one sample of size 2 from a box with tickets from 1 to 6
+
+```{webr-r}
+box <- c(1, 2, 3, 4, 5, 6)
+sample(x = box, size = 2)
+```
+```{webr-r}
+box <- c(1, 2, 3, 4, 5, 6)
+sample(x = box, size = 2, replace = TRUE)
+```
+
+
+
+What would happen if we don’t specify values for size and replace?
+
+```{webr-r}
+box <- c(1, 2, 3, 4, 5, 6)
+sample(x = box)
+```
+
+
+What would we do differently if we wanted to simulate two rolls of a die?
+
+We would sample twice from the vector die with replacement:
+
+```{webr-r}         
+die <- c(1, 2, 3, 4, 5, 6)
+sample(die, size = 2, replace = FALSE)
+```
+
+```{webr-r}         
+die <- c(1, 2, 3, 4, 5, 6)
+sample(die)
+```
+
+```{webr-r}         
+die <- c(1, 2, 3, 4, 5, 6)
+sample(die, size = 2, replace = TRUE)
+```
+
+What if we wanted to know the sum of the two die?
+
+```{webr-r}         
+die <- c(1, 2, 3, 4, 5, 6)
+rolls <- sample(die, size = 2, replace = TRUE)
+
+rolls
+
+sum(rolls)
+```
+
+
+2\. `set.seed()`: returns the random number generator to the point given by the seed number
+
+The random number generator in R is called a “Pseudo Random Number Generator”, because the process can be controlled by a “seed number”. These are algorithmic random number generators, which means that if you provide the same seed (a starting number), R will generate the same sequence of random numbers. This makes it easier to debug your code, and reproduce your results if needed.
+
+**Arguments**
+
+– **n:** the seed number to use. You can use any number you like, for example 1, or 31415 etc You might have noticed that each time you run sample in the code chunk above, it gives you a different sample. Sometimes we want it to give the same sample so that we can check how the code is working without the sample changing each time. We will use the set.seed function for this, which ensures that we will get the same random sample each time we run the code.
+
+Example: one sample of size 2 from a box with tickets from 1 to 6
+
+\[1\] 1 4
+
+Example: another sample of size 2 from a box with tickets from 1 to 6
+
+\[1\] 1 4\
+
+Notice that we get the same sample. You can try to run sample(die) without using `set.seed()` and see what happens.
+
+Though we used `set.seed()` twice here to demonstrate its purpose, generally, you will only need to run `set.seed()` one time per document. This is a line of code that fits perfectly at the beginning of your work, when you are also loading libraries and packages.
+
+```{webr-r}
+1 + 1
+```

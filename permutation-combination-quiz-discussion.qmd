@@ -1,0 +1,60 @@
+---
+title: "Permutation or combination - solution"
+date: "2024-09-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center")
+```
+
+---
+Here is a set of questions where students must determine whether each is a permutation or combination problem:
+
+---
+
+### Questions: Permutation or Combination?
+
+1. **Student Club Officers:**
+   A student club needs to elect a president, vice president, and secretary from a group of 7 members. In how many ways can these three officers be chosen?
+
+2. **Selecting a Research Team:**
+   A professor wants to choose 4 students out of 10 to join her research team. In how many ways can the students be selected?
+
+3. **Forming a Study Group:**
+   A group of 5 students wants to form a study group, but they will sit in a specific order around a round table. How many different seating arrangements are possible?
+
+4. **Assigning Dorm Rooms:**
+   10 students are applying for 5 single rooms in a dormitory. The rooms are identical. In how many ways can 5 students be assigned a room?
+
+5. **Choosing Books for a Course:**
+   A literature professor needs to select 3 books out of 8 for a course syllabus. The order in which the books are read does not matter. How many different selections are possible?
+
+6. **Organizing a Science Fair:**
+   In a science fair, 6 projects are submitted. Three prizes will be awarded: first place, second place, and third place. In how many ways can the three prizes be awarded?
+
+7. **Scheduling Speakers for a Conference:**
+   A conference organizer needs to schedule 4 speakers for different time slots throughout the day. In how many ways can the organizer schedule the speakers?
+
+8. **Forming a Mixed Committee:**
+   A new committee is to be formed with 2 faculty members and 3 students from a pool of 6 faculty members and 8 students. How many different committees can be formed?
+
+9. **Choosing Seats in a Classroom:**
+   In a class, there are 20 students and 5 available seats in the front row. In how many ways can 5 students be chosen to sit in those seats?
+
+10. **Arranging Books on a Shelf:**
+    A student has 7 different books and wants to arrange them on a shelf. In how many different ways can the books be arranged?
+
+---
+
+### Answers: Identify the Problem Type
+
+1. **Permutation** - The order of selection matters (President, Vice President, Secretary).
+2. **Combination** - The order does not matter; it's just selecting 4 out of 10 students.
+3. **Permutation** - The order of seating around the table matters.
+4. **Combination** - The rooms are identical, so only the choice of 5 students matters, not the order.
+5. **Combination** - Selecting 3 books from 8 without concern for order.
+6. **Permutation** - The order of prizes (first, second, third) matters.
+7. **Permutation** - Scheduling for different time slots means the order matters.
+8. **Combination** - Forming a committee where order of selection doesn't matter.
+9. **Combination** - Selecting 5 students out of 20, assuming seats themselves are not distinguishable.
+10. **Permutation** - Arranging books on a shelf where the order matters.

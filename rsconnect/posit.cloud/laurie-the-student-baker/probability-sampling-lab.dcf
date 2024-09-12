@@ -1,0 +1,13 @@
+name: probability-sampling-lab
+title: probability-sampling-lab
+username: laurie-the-student-baker
+account: laurie-the-student-baker
+server: posit.cloud
+hostUrl: https://api.posit.cloud/v1
+appId: 8721759
+bundleId: 9090154
+url: https://posit.cloud/content/8721759
+version: 1
+asMultiple: FALSE
+asStatic: TRUE
+ignoredFiles: 01-problem-set-solutions.qmd|01-problem-set.qmd|02-problem-set-solutions.qmd|02-problem-set.qmd|03-problem-set-password-length.qmd|index.qmd|permutation-combination-quiz-discussion-solution.qmd|permutation-combination-quiz-discussion.qmd|permutations-combinations-cheat-sheet.qmd|probability-webr-labs.qmd

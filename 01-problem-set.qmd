@@ -1,0 +1,56 @@
+---
+title: "Problem set 1 - Permutations"
+date: "2024-09-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center")
+```
+
+---
+
+## Permutations
+
+### Problem 1: College Students
+
+A group of 8 college students is forming a study team to present a group project. The group needs to select 3 students to present on different topics: Introduction, Analysis, and Conclusion. Each student will be assigned to a specific topic.
+
+**Question:**  
+How many different ways can the group assign the 3 students to the 3 different topics?
+
+
+
+
+
+
+---
+
+### Problem 2: Ecology
+
+A researcher is tagging 5 different species of fish (labeled A, B, C, D, E) to track their movements within a river ecosystem. They plan to release 4 of these fish into 4 distinct zones of the river, with each zone receiving exactly one fish.
+
+**Question:**  
+How many different ways can the researcher select 4 fish out of the 5 and arrange them in the 4 different zones?
+
+
+
+
+---
+
+### Problem 3: US Politics
+
+A political campaign manager is organizing a tour for 6 different cities where their candidate will speak. However, due to time constraints, the candidate can only visit 4 cities. The order of visits is important to maximize media coverage.
+
+**Question:**  
+How many different ways can the campaign manager choose 4 cities out of the 6 and arrange the order of the visits?
+
+---
+
+### Problem 4: Last names
+
+I'm get married on September 21st. My partner and I have thought about combining our last names. Our last names are Egan and Baker.
+
+**Question:**  
+What are the number of permutations of the letters in our last names? How many last names could we choose from? Bonus: Suggest a new last name for us. So far, my favorite is: Kangerbae.
+
+---
