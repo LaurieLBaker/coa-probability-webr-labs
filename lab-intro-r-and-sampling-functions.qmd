@@ -222,18 +222,45 @@ Let's return to the Beano game. In the game we roll two die and sum them togethe
 
 Another way we can simulate this is to store our first dice roll in an object called `dice roll 1` and the second dice roll in an object called `dice roll 2`. We can get the sum by adding them together and we can plot the distribution.
 
+Try modifying the number of rolls to see how the game would play out with a small number of rolls (e.g. 8) and a very large number of rolls (e.g. 1000). What do you notice?
+
 ```{webr, message = FALSE}
 library(ggplot2)
 
 die_1 <- seq(from = 1, to = 6, by = 1)
 die_2 <- seq(from = 1, to = 6, by = 1)
 
-game_rolls <- data.frame(roll_1 = sample(die_1, size = 100, replace = TRUE),
-                         roll_2 = sample(die_2, size = 100, replace = TRUE))
+number_of_rolls <- 100
+
+game_rolls <- data.frame(roll_1 = sample(die_1, size = number_of_rolls, replace = TRUE),
+                         roll_2 = sample(die_2, size = number_of_rolls, replace = TRUE))
 
 ggplot(game_rolls) + 
-  geom_histogram(aes(x = roll_1 + roll_2)) +
-  scale_x_discrete(name = "sum of dice", breaks = seq(from = 2, to = 12, by = 1))
+  geom_histogram(aes(x = roll_1 + roll_2), binwidth = 1) +
+  scale_x_continuous(breaks = seq(1, 12, by = 1))
 ```
 
 
+**Challenge**
+
+
+Try modifying the code to simulate a Beano game played with a 20 sided die.
+
+
+```{webr, message = FALSE}
+library(ggplot2)
+
+die_1 <- seq(from = 1, to = 6, by = 1)
+die_2 <- seq(from = 1, to = 6, by = 1)
+
+number_of_rolls <- 100
+
+game_rolls <- data.frame(roll_1 = sample(die_1, size = number_of_rolls, replace = TRUE),
+                         roll_2 = sample(die_2, size = number_of_rolls, replace = TRUE))
+
+ggplot(game_rolls) + 
+  geom_histogram(aes(x = roll_1 + roll_2), binwidth = 1) +
+  scale_x_continuous(breaks = seq(1, 12, by = 1))
+```
+
+**Hint**: Don't forget to update `scale_x_continuous()`
