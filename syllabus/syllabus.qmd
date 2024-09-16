@@ -1,0 +1,141 @@
+---
+title: "Probability Course Syllabus"
+author: "Dr. Laurie Baker"
+format: pdf
+---
+
+## Course description
+
+Probability is the branch of mathematics that deals with the likelihood of events occurring. It provides the theoretical foundation for making predictions about the behavior of random phenomena. Statistics uses this framework to analyze real-world data, make inferences, and draw conclusions. Probability theory can help us to make informed decisions whether it’s assessing risks, making choices based on potential outcomes, or understanding the likelihood of events. This course will introduce students to probability and random variables through real-world examples with an emphasis on developing probabilistic intuition through simulation. Topics covered include discrete and continuous random variables, probability spaces, densities and distributions, independence, joint and conditional distributions, expectation, and concepts including Bayes’ theorem, the central limit theorem and the law of large numbers.
+
+This course will equip students with the tools and understanding to pursue more advanced studies in probability and related fields such as statistics and data science. Students’ learning will be assessed through weekly problem sets and a final take-home exam.
+
+### Additional Course Info
+- **Meets the following requirements:** QR
+- **Prerequisites:** Calculus 1 or equivalent (e.g. AP Calculus, IB Calculus). Students unsure if they have the right background are warmly invited to contact the instructors.
+- **Level:** Introductory/Intermediate
+- **Course limit:** 12
+- **Lab fee:** No lab fee
+
+
+## Course Materials required: 
+
+- I will post the required readings and/or videos to Google Classroom.
+
+
+### Technology:
+
+- Bring a laptop to class. We will use R periodically through the browser for some of the probability concepts.
+
+- If you are in need of a term long loaner laptop, please contact the IT department at [helpdesk@coa.edu](mailto:helpdesk@coa.edu). Mention that you are taking a data science class, and pick up the laptop in A&S right by the whale skull.
+
+## Course components
+
+### Weekly structure
+
+This class takes a flipped classroom approach which means that there will be materials to review before class (readings or videos) and during class we will review concepts and be working on hands-on activities and problem sets. It is important to come prepared to class having reviewed the material assigned. 
+
+The class will meet for 55 minutes on Tuesday and Friday from 13:00-13:55 and for 55 minutes on Wednesday from 10:35-11:30. The remaining 25 minutes of the course time block will be open for help.
+
+
+In addition to the 2 hours and 45 minutes of scheduled class time every week, I expect that between readings, going over notes, and doing assignments you will spend at least an additional 12 hours and fifteen minutes a week on this course, for a total of at least 150 hours over the term devoted to this class. 
+
+### Getting Help
+
+**What if I need help?**  First, I expect you to make a good-faith effort whenever tackling a new problem.  While there is no single best answer to “How long should I spend trying to solve a problem before asking a question?” five minutes is too little and five hours is way too long. There are several mechanisms where you can and should ask for help:
+
+
+#### **Help sessions**
+
+Help sessions will be offered each week in the 25 minutes after class and in a handful of help sessions every week (time TBD). You are warmly invited and encouraged to attend these sessions. Help sessions are relaxed, informal, and hopefully fun. Things that happen at help sessions:
+
+1. I am around to offer help on your problem sets or to clarify concepts.
+2. Some students do most of the assignment while at a help session. They work through problems alone or with others, and find it comforting to know that help is at hand if needed.
+3. Others do the problems at home and come to the help session with specific questions.
+4. Help sessions are also a chance to ask general questions about the course.
+5. Help sessions are a great way to meet other students in the class.
+
+Everyone is welcome at help sessions! Attending these sessions help students do well in class and get as much out of it as possible. 
+
+The help sessions for this term will be in **CHE 202** immediately after class and at dates and times TBD.
+
+#### Google Classroom Question Forum 
+
+The question forum on [google classroom](https://classroom.google.com/) will be used for online Q&A and collaborative discussion.  You can post questions and answers can be posted by the instructor and/or other students.  Please check google classroom to see whether a question has already been asked/answered before starting a new post. However, instead of sharing code on google classroom, describe the issue or post the error message - if we need to troubleshoot outside google classroom, I will let you know!
+
+I will make an effort to check the question forum every day during the week to answer any questions. I will check the board on Monday to answer any questions posted over the weekend.
+
+Attendance to class is important as you will be working on problem sets and other hands-on activities in class individually and in teams. If you have to miss class for any reason, it is your responsibility to reach out to me over email and also check Google Classroom and catch up on any missed work.
+
+### Take home final exam
+
+There will be a take-home final exam due in week 10. You may use your notes from class and outside resources barring the use of Generative AI.
+
+## Grades: 
+
+A growing body of research indicates that traditional approaches to grading fail to produce the sorts of meaningful learning desired by both teachers and students. Such approaches often reinforce inequitable power dynamics between teachers and students, promote faulty reward systems that disincentive creativity and risk-taking, and devalue important aspects of learning (including revision and feedback). Given this context, instead of a traditional approach to grading in which you do work that is evaluated singularly by me, this course assumes that you opt to take ownership and responsibility over your performance and engagement with the class. To make this happen, this course uses a "contract grading" scheme, which gives you a voice in the grading process, provides you with the agency to specify your intended course performance, and also share in the responsibility for evaluating whether or not you fulfilled your intended obligations. Please see the contract grading document (on [Google Classroom](https://classroom.google.com/)) for a more-fleshed-out explanation of this approach and how it will operate in the course.
+
+The work in this course will be comprised of the following components and their weights:
+
+- Weekly problem sets approximately 70%
+- Final take home exam approximately 15%
+- Attendance (Participation, Engagement, and Leadership) in all aspects of the course  approximately 15%
+
+## Policies
+
+## Generative AI
+
+The use of generative AI (such as ChatGPT, DALL-E, etc.) may be used to help clarify concepts or to ask questions to assist learning, but you are responsible for ground-truthing that information with other sources.
+
+The use of generative AI tools (such as ChatGPT, DALL-E, etc.) cannot be use to work on specific problems on problem sets and take-home exams; any use of AI tools for these assignments may be considered a violation of College of the Atlantic’s Academic Integrity policy, since the work is not your own. The use of unauthorized AI tools will result in no credit for that assignment.
+
+When in doubt, ask me beforehand. For instance, I am happy for you to ask Generative AI to explain the difference between permutations and combinations and to compare their answer to your notes. Asking it to "Solve the following problem: [copy-paste problem set question]" is not an acceptable use and is in violation of the Academic Integrity policy.
+
+## Academic Integrity (excerpt from Course Catalog)
+
+By enrolling in an academic institution, a student is subscribing to common standards of academic honesty. Any cheating, plagiarism, falsifying or fabricating of data is a breach of such standards. A student must make it their responsibility to not use words or works of others without proper acknowledgement. Plagiarism is unacceptable and evidence of such activity is reported to the provost or their designee. Two violations of academic integrity are grounds for dismissal from the college. Students would request in-class discussions of such questions when complex issues of ethical scholarship arise.
+
+In my experience, issues with Academic Integrity are more like to arise when you are coming up against a deadline. Start your work early and give yourself plenty of time to attend help sessions.
+
+## Universal Learning and Learning in Community
+
+Many of us learn in different ways.  For example, you may process information by speaking and listening, so while lectures are quite helpful for you, some of the written material may be difficult to absorb. You might have difficulty following lectures, but are able to quickly assimilate written information.  You may need to fidget to focus in class.  You might take notes best when you can draw a concept.  For some of you, speaking in class can be a stressful or daunting experience.  For some of you, certain topics or themes might be so traumatic as to be disruptive to learning. The principle of Universal Design for Learning calls for our classrooms, our virtual spaces, our practices and our interactions to be designed to include as many different modes of learning as possible, and is a principle I take seriously in this class. 
+
+It is also my goal to create an inclusive classroom, which depends on community building, and which requires everyone to come to class with mutual respect, civility, and a willingness to listen to and observe others. As such the syllabus serves as a contract of some expectations between all members of the class, including myself.
+
+If you anticipate or experience any barriers to learning in this course, please reach out to me and your student support advisor. If you have a disability, or think you may have a disability, COA's Disability Support Services located within the Office of Student Life in Deering Commons to develop a plan for your academic accommodations. You can find out more information in the course catalog under *Accommodating students with disabilities*. If you have already been approved for accommodations through the Disability Support Services please let me know! We can meet 1-1 to explore concerns and potential options. 
+
+### Late work, extensions, and special circumstances
+
+All work is due within the stated due date window. Due date windows are there to help guide your pace through the course and they also allow me to return feedback to you in a timely manner.
+
+You have two late passes you may use to submit work up to two days after the due date window. You should **notify** me before the end of the due date window to let me know that you intend to use one of your passes.
+
+## Support
+
+### Title IX
+
+COA is dedicated to establishing and maintaining a safe and inclusive campus where all community members have equal access to COA’s educational and employment opportunities. We strive to promote an environment of respect, safety, and well-being and will not tolerate gender-based or sexual discrimination nor sexual harassment of any kind.
+
+As a faculty member, I am considered a “responsible employee” and am required to share any disclosures of sexual or gender-based misconduct with the Title IX Coordinator. This includes disclosures of experiences that happened before an individual’s time at COA. This is to ensure that all community members who have experienced sexual misconduct receive support, options, and information about their rights and resources. Community members are not obligated to respond to this outreach, and this will not generate a report to law enforcement.
+
+For more information regarding Title IX, our institutional policy, and to access helpful resources, visit COA’s Title IX website: coa.edu/human-resources/title-ix. 
+
+If you have any questions or want to explore support and assistance, please contact COA’s Title IX Coordinator, Puranjot Kaur, at [pkaur@coa.edu](pkaur@coa.edu). Speaking to the Title IX Coordinator does not automatically initiate a college resolution. Instead, much of her work is around providing supportive measures to ensure you can continue to engage in COA’s programs and activities.
+
+**Note on Pregnancy and Related Conditions**
+
+Title IX prohibits discrimination based on sex in education programs and activities. This prohibition on discrimination extends to pregnancy and related conditions. Pregnancy and related conditions encompass pregnancy, childbirth, miscarriage, termination of pregnancy, false pregnancy, lactation, or recovery from any of these conditions. 
+
+Students experiencing pregnancy or related conditions may voluntarily initiate contact with the Title IX Coordinator to request reasonable adjustments available under Title IX. Reasonable adjustments may include but are not limited to: excusing student absences; allowing students to make up missed work; opportunities to move around during class; additional breaks; missing some or all of a class session to nurse or pump, and to have the opportunity to make up any work missed. Information on lactation space on campus can be found here: coa.edu/human-resources/title-ix/support-resources/lactation-space.
+
+Students who believe they have been subject to discrimination because of pregnancy or related condition status may file a formal complaint with the Title IX Coordinator. If you are a pregnant or parenting student, and you are in need of any adjustments. please let me know at your earliest convenience.
+
+
+### Wellbeing
+ 
+I want to make sure that you learn everything you were hoping to learn from this class. If this requires flexibility, please don't hesitate to ask.
+
+- You *never* owe me personal information about your health (mental or physical) but you're always welcome to talk to me. If I can't help, I likely know someone who can.
+ 
+- I want you to learn lots of things from this class, but I primarily want you to stay healthy, balanced, and grounded.

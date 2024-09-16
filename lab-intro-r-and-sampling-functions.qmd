@@ -125,26 +125,21 @@ We would sample twice from the vector die with replacement:
 
 ```{webr-r}         
 die <- c(1, 2, 3, 4, 5, 6)
+sample(die, sample = 2, replace = TRUE)
+```
+
+Your turn: Adapt the following code to roll 3 die with replacement:
+
+```{webr-r}         
+die <- c(1, 2, 3, 4, 5, 6)
 sample(die, size = 2, replace = FALSE)
-```
-
-```{webr-r}         
-die <- c(1, 2, 3, 4, 5, 6)
-sample(die)
-```
-
-```{webr-r}         
-die <- c(1, 2, 3, 4, 5, 6)
-sample(die, size = 2, replace = TRUE)
 ```
 
 What if we wanted to know the sum of the two die?
 
 ```{webr-r}         
 die <- c(1, 2, 3, 4, 5, 6)
-rolls <- sample(die, size = 2, replace = TRUE)
-
-rolls
+roll <- sample(die, size = 2, replace = TRUE)
 
 sum(rolls)
 ```
@@ -158,18 +153,87 @@ The random number generator in R is called a “Pseudo Random Number Generator�
 
 – **n:** the seed number to use. You can use any number you like, for example 1, or 31415 etc You might have noticed that each time you run sample in the code chunk above, it gives you a different sample. Sometimes we want it to give the same sample so that we can check how the code is working without the sample changing each time. We will use the set.seed function for this, which ensures that we will get the same random sample each time we run the code.
 
-Example: one sample of size 2 from a box with tickets from 1 to 6
+Example: one sample of size 4 from a box with tickets from 1 to 6
 
-\[1\] 1 4
+```{webr-r}
+set.seed(1)
+box <- c(1, 2, 3, 4, 5, 6)
+sample(box, size = 4, replace = FALSE)
 
-Example: another sample of size 2 from a box with tickets from 1 to 6
+```
 
-\[1\] 1 4\
+
+Example: another sample of size 4 from a box with tickets from 1 to 6
+
+```{webr-r}
+set.seed(1)
+box <- c(1, 2, 3, 4, 5, 6)
+sample(box, size = 4, replace = FALSE)
+```
+
 
 Notice that we get the same sample. You can try to run sample(die) without using `set.seed()` and see what happens.
 
+```{webr-r}
+
+box <- c(1, 2, 3, 4, 5, 6)
+sample(box, size = 4, replace = FALSE)
+
+```
+
+
 Though we used `set.seed()` twice here to demonstrate its purpose, generally, you will only need to run `set.seed()` one time per document. This is a line of code that fits perfectly at the beginning of your work, when you are also loading libraries and packages.
 
+3\. `seq()`: creates a sequence of numbers
+Above, we created the vector die using `die <- c(1, 2, 3, 4, 5, 6)`, which is fine, but this method would be tedious if we wanted to simulate a 20-sided die, for instance. The function seq() allows us to create any sequence we like by specifying the starting number, how we want to increment the numbers, and either the ending number or the length of the sequence we want.
+
+**Arguments**
+
+– **from:** where to start
+- **by:** size of jump from number to number (the increment)
+You can end a sequence in one of two ways: 
+
+- **to:** at what number should the sequence end - **length:** how long should the sequence be
+
+**Example: sequence with the to argument**
+
+
+
 ```{webr-r}
-1 + 1
+
+odds_1 <- seq(from = 1, by = 2, to = 9)
+odds_1
+
 ```
+
+Example: sequence with the length argument
+
+```{webr-r}
+
+odds_2 <- seq(from = 1, by = 2, length = 5)
+odds_2
+
+```
+
+
+## Returning to Beano
+
+Let's return to the Beano game. In the game we roll two die and sum them together. 
+
+Another way we can simulate this is to store our first dice roll in an object called `dice roll 1` and the second dice roll in an object called `dice roll 2`. We can get the sum by adding them together and we can plot the distribution.
+
+```{webr, message = FALSE}
+library(ggplot2)
+
+die_1 <- seq(from = 1, to = 6, by = 1)
+die_2 <- seq(from = 1, to = 6, by = 1)
+
+game_rolls <- data.frame(roll_1 = sample(die_1, size = 100, replace = TRUE),
+                         roll_2 = sample(die_2, size = 100, replace = TRUE))
+
+ggplot(game_rolls) + 
+  geom_histogram(aes(x = roll_1 + roll_2)) +
+  scale_x_discrete(name = "sum of dice", breaks = seq(from = 2, to = 12, by = 1))
+```
+
+
