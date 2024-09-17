@@ -1,0 +1,125 @@
+---
+title: "Introducing Probability"
+subtitle: "Problem Set 1 - Due Friday, September 27"
+format: pdf
+---
+
+Consider the seven-sided die (with sides 0, 1, 2, 3, 4, 5 and 6). You roll this die once. Let:
+
+-   A be the event that a given roll yields an even number.   
+-   B be the event that a given roll is greater than or equal to three.   
+-   C be the event that the number is a prime number (only divisible by 1 and itself).
+
+@. Find $\text{P}(A)$, $\text{P}(B)$ and $\text{P}(C)$
+
+  \
+  
+  \
+  
+@. Find $\text{P}(A \cup B)$. 
+
+  \
+  
+  \
+  
+@. Find $\text{P}(B \cap C)$
+
+  \
+  
+  \
+  
+@. Find $\text{P}(A \cap B^C)$.
+
+  \
+  
+  \
+
+We use $\Omega$ "omega" to denote the outcome space (e.g. for a coin toss this would be $\Omega = {H, T}$).
+
+@. What was the outcome space in our beano game? The outcome space for a coin toss is ${H, T}$ what would be the outcome space for Beano?
+
+2. Mutually exclusive events are events that cannot happen at the same time. List a few examples of mutually exclusive events. 
+
+   \
+   
+   \
+
+@.	True or False. For two mutually exclusive events, the probability that either of the two events might occur is the sum of their probabilities. 
+
+
+TAB puts together a mystery box of baked goods. In the mystery box, there are 35 chocolate dipped macaroons (my favorite), 50 snickerdoodles, and 30 ginger molasses cookies. 
+   \
+   
+   \
+
+@. What is the probability that you choose the macaroon if you are equally likely to pick any cookie? 
+
+   \
+   
+   \
+
+@. What is the probability you don’t choose a macaroon? 
+   \
+   
+   \
+
+@.	If the probability of choosing a macaroon is known as event A, what notation would you use to write its complement? What would its complement be the equivalent of?
+
+
+
+One ticket will be drawn at random from each of the two boxes below:
+
+\begin{center}
+$A: \fbox{\fbox{1} \fbox{2} \fbox{3}}$ $\hspace{1cm}$ $B: \fbox{ \fbox{1} \fbox{2} \fbox{3} \fbox{4}}$
+\end{center}
+
+@. What is the probability the number drawn from $A$ is greater than the one drawn from $B$?
+
+   \
+   
+   \
+
+@. What is the probability that the number drawn from $A$ is equal to the one drawn from $B$?
+
+   \
+   
+   \
+
+@. What is the probability the number drawn from $A$ is smaller than the one drawn from $B$?
+
+   \
+   
+   \
+   
+
+Consider an outcome space $\Omega$ with events $A, B$ that are *not* mutually exclusive. Let $P(A) = 0.5, P(B) = 0.7$ and $P(A \cap B) = .4$.
+
+@. Draw a Venn Diagram containing two circles, one representing $A$ and the other $B$.
+
+  \
+  
+  \
+  
+  \
+  
+  \
+  
+  \
+  
+  \
+
+@. Shade in the space in the diagram above corresponding to event $A$.
+
+@. Shade in the space in the diagram above corresponding to event $B$ in a way that is different than the way you shaded in the space for event $A$.
+
+@. Based on your shading, calculate the probability $P(A \cup B)$. Explain why you cannot add $P(A)$ and $P(B)$ directly to obtain this answer.  
+
+  \
+  
+  \
+
+
+
+**Acknowledgements:**
+
+Problem set adapted from Andrew Bray and colleagues at UC Berkeley.
