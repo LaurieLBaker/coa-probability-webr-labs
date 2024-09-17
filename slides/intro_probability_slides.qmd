@@ -13,6 +13,9 @@ format: revealjs
 
 ## Review of syllabus questions
 
+- Grading Contract Demo
+- Question Forum Demo
+
 # Concept review: Rules
 
 ## Rules of probability {.incremental}
