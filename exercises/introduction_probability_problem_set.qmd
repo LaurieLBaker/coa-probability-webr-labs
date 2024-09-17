@@ -52,7 +52,7 @@ TAB puts together a mystery box of baked goods. In the mystery box, there are 35
    
    \
 
-@. What is the probability that you choose the macaroon if you are equally likely to pick any cookie? 
+@. What is the probability that you choose the macaroon if you are equally likely to pick any baked good? 
 
    \
    

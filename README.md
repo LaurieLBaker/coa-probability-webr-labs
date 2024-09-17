@@ -4,4 +4,6 @@
 
 [Week 1: Probability Intro Slides - Day 1](slides/intro_probability_slides.html)
 
+[Week 1: Combination Permutation Intro Slides - Day 1](slides/intro_combination_permutation.html)
+
 ## Week 2
