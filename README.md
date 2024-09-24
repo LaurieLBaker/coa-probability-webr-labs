@@ -7,3 +7,5 @@
 [Week 1: Combination Permutation Intro Slides - Day 1](slides/intro_combination_permutation.html)
 
 ## Week 2
+
+[Week 1: Combination Permutation Contd Slides - Day 1](slides/combination_permutation_contd.html)

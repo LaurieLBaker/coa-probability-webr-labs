@@ -13,6 +13,8 @@ format: revealjs
 
 ## Web-R Review
 
+-   [Web-r exercises]()
+
 ## The Basic Rule of Counting Review
 
 Suppose an experiment consists $r$ different outcomes, with the $i$-th outcome having $n_i$ possibilities, then together there are
@@ -31,12 +33,9 @@ $$
 
 A sandwich shop has 3 bread options, 4 spread options, and 4 fillings. How many different sandwiches can you create?
 
-
-
-
 ## Permutations Review
 
-- Using the cards given to each pair. List and count the number of ways that the cards could be arranged and report back that number.
+-   Using the cards given to each pair. List and count the number of ways that the cards could be arranged and report back that number.
 
 ```{r}
 countdown::countdown(2, top = 2.5)
@@ -44,7 +43,7 @@ countdown::countdown(2, top = 2.5)
 
 ## Permutation Review
 
-- In permutations, order matters.
+-   In permutations, order matters.
 
 For two cards we have $2!$ options:
 
@@ -84,22 +83,18 @@ factorial(100)
 
 How many permutations in the word Facebook?
 
-* $\frac{8!}{2!}$
-
+-   $\frac{8!}{2!}$
 
 |     |     |     |     |     |       |       |     |
 |-----|-----|-----|-----|-----|-------|-------|-----|
 | c   | e   | F   | a   | b   | o$_1$ | o$_2$ | k   |
 | c   | e   | F   | a   | b   | o$_2$ | o$_1$ | k   |
 
-
-* Why? What does each part represent?
-
+-   Why? What does each part represent?
 
 ```{r}
 countdown::countdown(2, top = 2.5)
 ```
-
 
 ## Permutation of r groups of n objects
 
@@ -111,9 +106,9 @@ $$
 
 different permutations.
 
-How many different permutations for the word *banagrams*?
+How many different permutations for the word *bananagrams*?
 
-Working with a partner - write your solution on the board. 
+Working with a partner - write your solution on the board.
 
 ```{r}
 countdown::countdown(3, top = 2.5)

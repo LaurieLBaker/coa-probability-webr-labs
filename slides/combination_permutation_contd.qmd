@@ -1,0 +1,64 @@
+---
+title: "Combination Permutation Recap"
+format: revealjs
+---
+
+## Agenda
+
+-   Announcements
+-   Counting, Combination, Permutation Practice
+-   Combination - $n$ choose $r$ refresher
+
+## Concept Question 1 - Combinations
+
+How many different outfits can you create with 3 pairs of pants with 4 shirts and 2 pairs of shoes?
+
+
+```{r}
+countdown::countdown(3, top = 2.5)
+```
+
+
+## Permutation Review
+
+-   In permutations, order matters.
+
+Number of permutations of $n$ different objects
+
+$$
+n \times (n-1) \times \cdots 2 \times 1 = n!
+$$
+
+- How many ways could you line up everyone (9 people) in the class?
+
+## Concept Question: Permutation of r groups of n objects
+
+Among $n$ objects, if $n_1$ are alike, $n_2$ are alike, $\ldots$, $n_r$ are alike, then there are
+
+$$
+\frac{n!}{n_1! n_2! \cdots n_r!}
+$$
+
+different permutations.
+
+How many different permutations for the word *acclimate*?
+
+Working with a partner - write your solution on the board.
+
+```{r}
+countdown::countdown(3, top = 2.5)
+```
+
+---
+
+## Combinations recap - order doesn't matter practice
+
+- If we have $n$ items and want to select $r$ of them,
+
+
+$$
+\binom{n}{r} = \frac{n!}{(n-r)!r!}
+$$
+
+The number ${n \choose r}$ is pronounced as $n$ choose $r$, it is the number of ways to pick
+$r$ objects from a set of $n$ distinct objects.
