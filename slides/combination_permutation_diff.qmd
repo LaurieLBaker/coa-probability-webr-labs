@@ -1,0 +1,153 @@
+---
+title: "Combination Permutation Differences"
+format: revealjs
+---
+
+## Agenda
+
+-   Announcements
+-   Combinations vs. Permutations
+-   Combinations vs. Permuatations Definitions
+-   Use Cases
+-   Formulas
+-   Solutions to problems
+
+## Combinations and Permutations
+
+- Fundamental concepts in probability and combinatorics* that deal with the **selection** and **arrangement** of objects.
+
+*area of mathematics primarily concerned with counting things.
+
+## Definitions
+
+- **Permutations** refer to the different ways in which a set of objects can be arranged, where the order does matter.
+
+- **Combinations** refer to the different ways in which a set of objects can be selected, where the order *does not* matter.
+
+## Order Matters
+
+- **Permutations**: The order of selection is important. For example, if you are arranging a presentation, the sequence in which the presentation is given matters (Introduction, Methods, Conclusion is different from Conclusion, Methods, Introduction).
+
+- **Combinations**: The order of selection is not important.For example, if you are forming a committee of 3 members out of 5 people, the sequence in which you pick the members does not matter (Alice, Julio, Saliha is the same as Saliha, Alice, Julio).
+
+## Use Cases
+
+- **Permutations** are used when we need to determine the number of possible arrangements of a set of items where their order matters (e.g., seating arrangements, word formation).
+
+- **Combinations** are used when we need to determine the number of ways to select items from a set where their order does not matter (e.g., sandwich fillings, selecting a team).
+
+**What are some other use cases you can think of?**
+
+```{r}
+countdown::countdown(3, top = 3.5)
+```
+
+## Formulas Review - Permutations
+
+Number of permutations of $n$ different objects
+
+$$
+n \times (n-1) \times \cdots 2 \times 1 = n!
+$$
+
+**Variations**: r groups of n objects
+
+Among $n$ objects, if $n_1$ are alike, $n_2$ are alike, $\ldots$, $n_r$ are alike, then there are
+
+$$
+\frac{n!}{n_1! n_2! \cdots n_r!}
+$$
+
+different permutations.
+
+How many different permutations for the word *epitomize*?
+
+
+## Formula Review - **Counting combinations**
+
+Suppose an experiment consists $r$ different outcomes, with the $i$-th outcome having $n_i$ possibilities, then together there are
+
+$$
+n_1 \times n_2 \times \cdots \times n_r = \prod_{i=1}^{r} n_i
+$$
+
+How many license combinations could be made if the license must consist to 3 letters and 3 numbers?
+
+```{r}
+countdown::countdown(3, top = 3.5)
+```
+
+## Formula Review - **Combinations**
+
+- If we have $n$ items and want to select $r$ of them,
+
+
+$$
+\binom{n}{r} = \frac{n!}{(n-r)!r!}
+$$
+
+The number ${n \choose r}$ is pronounced as $n$ choose $r$, it is the number of ways to pick
+$r$ objects from a set of $n$ distinct objects.
+
+*Here, $r!$ accounts for the fact that the order in which the $r$ objects are chosen does not matter.
+
+
+## Summary
+
+- **Permutations** = Selection with arrangement (order matters).
+
+- **Combinations** = Selection without arrangement (order does not matter).
+
+Understanding whether the order is important or not. is key to distinguishing between the two.
+
+## Question 2: Forming a Faculty-Student Committee
+
+A college is forming a new committee to improve campus facilities, which will consist of 5 members: 3 faculty members and 2 students. If there are 8 faculty members and 7 students available, how many ways can the committee be formed if it must include exactly 3 faculty members and 2 students?
+
+## Question 2 Solution: Step 1
+
+This is a combination problem because the order in which the faculty members and students are chosen does not matter.
+
+We need to select: 
+
+- 3 faculty members from 8, 
+- 2 students from 7.
+
+## Choose 3 faculty out of 8
+
+First, calculate the number of ways to choose 3 faculty members out of 8:
+
+$$
+\binom{n}{r} = \frac{n!}{(n-r)!r!}
+$$
+
+$$
+\binom{8}{3} = \frac{8!}{3! \cdot (8 - 3)!} = \frac{8!}{3! \cdot 5!}
+$$
+
+$$
+\binom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = \frac{336}{6} = 56
+$$
+## Choose 2 students out of 7
+Next, calculate the number of ways to choose 2 students out of 7:
+
+$$
+\binom{7}{2} = \frac{7!}{2! \cdot (7 - 2)!} = \frac{7!}{2! \cdot 5!}
+$$
+
+$$
+\binom{7}{2} = \frac{7 \times 6}{2 \times 1} = \frac{42}{2} = 21
+$$
+## Question 2 Solution: Step 2
+
+Now, multiply the number of ways to choose faculty members and students to get the total number of ways to form the committee:
+
+
+
+$$
+\text{Total ways} = \binom{8}{3} \times \binom{7}{2} = 56 \times 21 = 1176
+$$
+
+There are 1,176 ways to form the committee.
+
+

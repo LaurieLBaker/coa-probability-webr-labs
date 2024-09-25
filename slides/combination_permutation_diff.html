@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="combination_permutation_contd_files/libs/clipboard/clipboard.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/tabby.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/popper.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="combination_permutation_contd_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="combination_permutation_contd_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="combination_permutation_contd_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="combination_permutation_contd_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="combination_permutation_diff_files/libs/clipboard/clipboard.min.js"></script>
+<script src="combination_permutation_diff_files/libs/quarto-html/tabby.min.js"></script>
+<script src="combination_permutation_diff_files/libs/quarto-html/popper.min.js"></script>
+<script src="combination_permutation_diff_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="combination_permutation_diff_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="combination_permutation_diff_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="combination_permutation_diff_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="combination_permutation_diff_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.555">
 
-  <title>Combination Permutation Recap</title>
+  <title>Combination Permutation Differences</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="combination_permutation_diff_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="combination_permutation_diff_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,11 +29,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="combination_permutation_diff_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="combination_permutation_diff_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="combination_permutation_diff_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="combination_permutation_diff_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="combination_permutation_diff_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -319,15 +319,15 @@
       margin-right: 0; 
     }
   </style>
-  <link href="combination_permutation_contd_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="combination_permutation_contd_files/libs/countdown-0.4.0/countdown.js"></script>
+  <link href="combination_permutation_diff_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="combination_permutation_diff_files/libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Combination Permutation Recap</h1>
+  <h1 class="title">Combination Permutation Differences</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -337,55 +337,82 @@
 <h2>Agenda</h2>
 <ul>
 <li>Announcements</li>
-<li>Counting, Combination, Permutation Practice</li>
-<li>Combination - <span class="math inline">\(n\)</span> choose <span class="math inline">\(r\)</span> refresher</li>
+<li>Combinations vs.&nbsp;Permutations</li>
+<li>Combinations vs.&nbsp;Permuatations Definitions</li>
+<li>Use Cases</li>
+<li>Formulas</li>
+<li>Solutions to problems</li>
 </ul>
 </section>
-<section id="concept-question-1---combinations" class="slide level2">
-<h2>Concept Question 1 - Combinations</h2>
-<p>How many different outfits can you create with 3 pairs of pants with 4 shirts and 2 pairs of shoes?</p>
+<section id="combinations-and-permutations" class="slide level2">
+<h2>Combinations and Permutations</h2>
+<ul>
+<li>Fundamental concepts in probability and combinatorics* that deal with the <strong>selection</strong> and <strong>arrangement</strong> of objects.</li>
+</ul>
+<p>*area of mathematics primarily concerned with counting things.</p>
+</section>
+<section id="definitions" class="slide level2">
+<h2>Definitions</h2>
+<ul>
+<li><p><strong>Permutations</strong> refer to the different ways in which a set of objects can be arranged, where the order does matter.</p></li>
+<li><p><strong>Combinations</strong> refer to the different ways in which a set of objects can be selected, where the order <em>does not</em> matter.</p></li>
+</ul>
+</section>
+<section id="order-matters" class="slide level2">
+<h2>Order Matters</h2>
+<ul>
+<li><p><strong>Permutations</strong>: The order of selection is important. For example, if you are arranging a presentation, the sequence in which the presentation is given matters (Introduction, Methods, Conclusion is different from Conclusion, Methods, Introduction).</p></li>
+<li><p><strong>Combinations</strong>: The order of selection is not important.For example, if you are forming a committee of 3 members out of 5 people, the sequence in which you pick the members does not matter (Alice, Julio, Saliha is the same as Saliha, Alice, Julio).</p></li>
+</ul>
+</section>
+<section id="use-cases" class="slide level2">
+<h2>Use Cases</h2>
+<ul>
+<li><p><strong>Permutations</strong> are used when we need to determine the number of possible arrangements of a set of items where their order matters (e.g., seating arrangements, word formation).</p></li>
+<li><p><strong>Combinations</strong> are used when we need to determine the number of ways to select items from a set where their order does not matter (e.g., sandwich fillings, selecting a team).</p></li>
+</ul>
+<p><strong>What are some other use cases you can think of?</strong></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b5ee386a" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
+<div class="countdown" id="timer_8f6430ec" data-update-every="1" tabindex="0" style="top:3.5;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="permutation-review" class="slide level2">
-<h2>Permutation Review</h2>
-<ul>
-<li>In permutations, order matters.</li>
-</ul>
+<section id="formulas-review---permutations" class="slide level2">
+<h2>Formulas Review - Permutations</h2>
 <p>Number of permutations of <span class="math inline">\(n\)</span> different objects</p>
 <p><span class="math display">\[
 n \times (n-1) \times \cdots 2 \times 1 = n!
 \]</span></p>
-<ul>
-<li>How many ways could you line up everyone (9 people) in the class?</li>
-</ul>
-</section>
-<section id="concept-question-permutation-of-r-groups-of-n-objects" class="slide level2">
-<h2>Concept Question: Permutation of r groups of n objects</h2>
+<p><strong>Variations</strong>: r groups of n objects</p>
 <p>Among <span class="math inline">\(n\)</span> objects, if <span class="math inline">\(n_1\)</span> are alike, <span class="math inline">\(n_2\)</span> are alike, <span class="math inline">\(\ldots\)</span>, <span class="math inline">\(n_r\)</span> are alike, then there are</p>
 <p><span class="math display">\[
 \frac{n!}{n_1! n_2! \cdots n_r!}
 \]</span></p>
 <p>different permutations.</p>
-<p>How many different permutations for the word <em>acclimate</em>?</p>
-<p>Working with a partner - write your solution on the board.</p>
+<p>How many different permutations for the word <em>epitomize</em>?</p>
+</section>
+<section id="formula-review---counting-combinations" class="slide level2">
+<h2>Formula Review - <strong>Counting combinations</strong></h2>
+<p>Suppose an experiment consists <span class="math inline">\(r\)</span> different outcomes, with the <span class="math inline">\(i\)</span>-th outcome having <span class="math inline">\(n_i\)</span> possibilities, then together there are</p>
+<p><span class="math display">\[
+n_1 \times n_2 \times \cdots \times n_r = \prod_{i=1}^{r} n_i
+\]</span></p>
+<p>How many license combinations could be made if the license must consist to 3 letters and 3 numbers?</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_aa0581ff" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
+<div class="countdown" id="timer_402cb914" data-update-every="1" tabindex="0" style="top:3.5;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="combinations-recap---order-doesnt-matter-practice" class="slide level2">
-<h2>Combinations recap - order doesn’t matter practice</h2>
+<section id="formula-review---combinations" class="slide level2">
+<h2>Formula Review - <strong>Combinations</strong></h2>
 <ul>
 <li>If we have <span class="math inline">\(n\)</span> items and want to select <span class="math inline">\(r\)</span> of them,</li>
 </ul>
@@ -393,6 +420,52 @@ n \times (n-1) \times \cdots 2 \times 1 = n!
 \binom{n}{r} = \frac{n!}{(n-r)!r!}
 \]</span></p>
 <p>The number <span class="math inline">\({n \choose r}\)</span> is pronounced as <span class="math inline">\(n\)</span> choose <span class="math inline">\(r\)</span>, it is the number of ways to pick <span class="math inline">\(r\)</span> objects from a set of <span class="math inline">\(n\)</span> distinct objects.</p>
+<p>*Here, <span class="math inline">\(r!\)</span> accounts for the fact that the order in which the <span class="math inline">\(r\)</span> objects are chosen does not matter.</p>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li><p><strong>Permutations</strong> = Selection with arrangement (order matters).</p></li>
+<li><p><strong>Combinations</strong> = Selection without arrangement (order does not matter).</p></li>
+</ul>
+<p>Understanding whether the order is important or not. is key to distinguishing between the two.</p>
+</section>
+<section id="question-2-forming-a-faculty-student-committee" class="slide level2">
+<h2>Question 2: Forming a Faculty-Student Committee</h2>
+<p>A college is forming a new committee to improve campus facilities, which will consist of 5 members: 3 faculty members and 2 students. If there are 8 faculty members and 7 students available, how many ways can the committee be formed if it must include exactly 3 faculty members and 2 students?</p>
+</section>
+<section id="question-2-solution-step-1" class="slide level2">
+<h2>Question 2 Solution: Step 1</h2>
+<p>This is a combination problem because the order in which the faculty members and students are chosen does not matter.</p>
+<p>We need to select:</p>
+<ul>
+<li>3 faculty members from 8,</li>
+<li>2 students from 7.</li>
+</ul>
+</section>
+<section id="choose-3-faculty-out-of-8" class="slide level2">
+<h2>Choose 3 faculty out of 8</h2>
+<p>First, calculate the number of ways to choose 3 faculty members out of 8:</p>
+<p><span class="math display">\[
+\binom{n}{r} = \frac{n!}{(n-r)!r!}
+\]</span></p>
+<p><span class="math display">\[
+\binom{8}{3} = \frac{8!}{3! \cdot (8 - 3)!} = \frac{8!}{3! \cdot 5!}
+\]</span></p>
+<p><span class="math display">\[
+\binom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = \frac{336}{6} = 56
+\]</span> ## Choose 2 students out of 7 Next, calculate the number of ways to choose 2 students out of 7:</p>
+<p><span class="math display">\[
+\binom{7}{2} = \frac{7!}{2! \cdot (7 - 2)!} = \frac{7!}{2! \cdot 5!}
+\]</span></p>
+<p><span class="math display">\[
+\binom{7}{2} = \frac{7 \times 6}{2 \times 1} = \frac{42}{2} = 21
+\]</span> ## Question 2 Solution: Step 2</p>
+<p>Now, multiply the number of ways to choose faculty members and students to get the total number of ways to form the committee:</p>
+<p><span class="math display">\[
+\text{Total ways} = \binom{8}{3} \times \binom{7}{2} = 56 \times 21 = 1176
+\]</span></p>
+<p>There are 1,176 ways to form the committee.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -403,19 +476,19 @@ n \times (n-1) \times \cdots 2 \times 1 = n!
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="combination_permutation_contd_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="combination_permutation_diff_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
