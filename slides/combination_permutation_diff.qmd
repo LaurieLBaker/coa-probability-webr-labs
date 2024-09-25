@@ -128,7 +128,9 @@ $$
 $$
 \binom{8}{3} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = \frac{336}{6} = 56
 $$
+
 ## Choose 2 students out of 7
+
 Next, calculate the number of ways to choose 2 students out of 7:
 
 $$
@@ -138,6 +140,7 @@ $$
 $$
 \binom{7}{2} = \frac{7 \times 6}{2 \times 1} = \frac{42}{2} = 21
 $$
+
 ## Question 2 Solution: Step 2
 
 Now, multiply the number of ways to choose faculty members and students to get the total number of ways to form the committee:
