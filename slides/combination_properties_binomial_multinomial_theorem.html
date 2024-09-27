@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="combination_permutation_contd_files/libs/clipboard/clipboard.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/tabby.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/popper.min.js"></script>
-<script src="combination_permutation_contd_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="combination_permutation_contd_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="combination_permutation_contd_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="combination_permutation_contd_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="combination_permutation_contd_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="combination_properties_binomial_multinomial_theorem_files/libs/clipboard/clipboard.min.js"></script>
+<script src="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/tabby.min.js"></script>
+<script src="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/popper.min.js"></script>
+<script src="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="combination_properties_binomial_multinomial_theorem_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.555">
 
-  <title>Combination Permutation Recap</title>
+  <title>Combination Properties and Binomial and Multinomial Theorem</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,11 +29,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="combination_permutation_contd_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="combination_permutation_contd_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -319,15 +319,15 @@
       margin-right: 0; 
     }
   </style>
-  <link href="combination_permutation_contd_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="combination_permutation_contd_files/libs/countdown-0.4.0/countdown.js"></script>
+  <link href="combination_properties_binomial_multinomial_theorem_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Combination Permutation Recap</h1>
+  <h1 class="title">Combination Properties and Binomial and Multinomial Theorem</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -337,62 +337,129 @@
 <h2>Agenda</h2>
 <ul>
 <li>Announcements</li>
-<li>Counting, Combination, Permutation Practice</li>
-<li>Combination - <span class="math inline">\(n\)</span> choose <span class="math inline">\(r\)</span> refresher</li>
+<li>Combination Properties</li>
+<li>Concept Q - Combination Properties</li>
+<li>Binomial Theorem</li>
+<li>Concept Q - Binomial Theorem</li>
+<li>Multinomial Theorem</li>
+<li>Concept Q - Multinomial Theorem</li>
 </ul>
 </section>
-<section id="concept-question-1---combinations" class="slide level2">
-<h2>Concept Question 1 - Combinations</h2>
-<p>How many different outfits can you create with 3 pairs of pants with 4 shirts and 2 pairs of shoes?</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_ce3dd5ac" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
-</section>
-<section id="permutation-review" class="slide level2">
-<h2>Permutation Review</h2>
-<ul>
-<li>In permutations, order matters.</li>
-</ul>
-<p>Number of permutations of <span class="math inline">\(n\)</span> different objects</p>
+<section id="combination-properties-1" class="slide level2">
+<h2>Combination Properties 1</h2>
+<ol type="1">
+<li>If choosing a single item out of <span class="math inline">\(n\)</span> possibilities, you have <span class="math inline">\(n\)</span> combinations.</li>
+</ol>
 <p><span class="math display">\[
-n \times (n-1) \times \cdots 2 \times 1 = n!
+{n \choose 1} = n
 \]</span></p>
-<ul>
-<li>How many ways could you line up everyone (9 people) in the class?</li>
-</ul>
 </section>
-<section id="concept-question-permutation-of-r-groups-of-n-objects" class="slide level2">
-<h2>Concept Question: Permutation of r groups of n objects</h2>
-<p>Among <span class="math inline">\(n\)</span> objects, if <span class="math inline">\(n_1\)</span> are alike, <span class="math inline">\(n_2\)</span> are alike, <span class="math inline">\(\ldots\)</span>, <span class="math inline">\(n_r\)</span> are alike, then there are</p>
+<section id="combination-properties-2" class="slide level2">
+<h2>Combination Properties 2</h2>
+<ol start="2" type="1">
+<li>If you have <span class="math inline">\(n\)</span> possibilities and are choosing <span class="math inline">\(n\)</span> items, you have <span class="math inline">\(1\)</span> combination.</li>
+</ol>
 <p><span class="math display">\[
-\frac{n!}{n_1! n_2! \cdots n_r!}
+{n \choose n} = 1
 \]</span></p>
-<p>different permutations.</p>
-<p>How many different permutations for the word <em>acclimate</em>?</p>
-<p>Working with a partner - write your solution on the board.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_d724791a" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
-</div>
-</div>
-</div>
 </section>
-<section id="combinations-recap---order-doesnt-matter-practice" class="slide level2">
-<h2>Combinations recap - order doesn’t matter practice</h2>
-<ul>
-<li>If we have <span class="math inline">\(n\)</span> items and want to select <span class="math inline">\(r\)</span> of them,</li>
-</ul>
+<section id="combination-properties-3" class="slide level2">
+<h2>Combination Properties 3</h2>
+<ol start="3" type="1">
+<li>Special <span class="math inline">\(r\)</span> chosen first</li>
+</ol>
+<p><span class="math display">\[
+{n \choose r} = {n \choose n - r}
+\]</span></p>
+<p><span class="math display">\[
+{n \choose r} = {n-1 \choose r} + {n-1 \choose r-1}, \quad 1\leq r \leq n
+\]</span></p>
+</section>
+<section id="concept-q-1" class="slide level2">
+<h2>Concept Q 1</h2>
+<p>Prove that</p>
+<p><span class="math display">\[
+{n \choose n} = 1
+\]</span></p>
+<p>using the combination formula</p>
 <p><span class="math display">\[
 \binom{n}{r} = \frac{n!}{(n-r)!r!}
 \]</span></p>
-<p>The number <span class="math inline">\({n \choose r}\)</span> is pronounced as <span class="math inline">\(n\)</span> choose <span class="math inline">\(r\)</span>, it is the number of ways to pick <span class="math inline">\(r\)</span> objects from a set of <span class="math inline">\(n\)</span> distinct objects.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_a27fa3a3" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="binomial-theorem---use-cases" class="slide level2">
+<h2>Binomial Theorem - Use Cases</h2>
+
+<img data-src="images/binomial.png" width="700" class="r-stretch"><ul>
+<li><p>Dead or Alive</p></li>
+<li><p>Yellow or Blue</p></li>
+<li><p>On or off</p></li>
+</ul>
+</section>
+<section id="binomial-theorem" class="slide level2">
+<h2>Binomial Theorem</h2>
+<p>Think about license plates that are formed by <span class="math inline">\(n\)</span> digits, where each digit can be <strong>either</strong> a letter or a number. <span class="math inline">\(a = 26, b = 10\)</span>.</p>
+<p>Total number of distinct plates:</p>
+<p><span class="math display">\[
+N = (a + b)^n = N_0 + N_1 + \cdots + N_n,
+\]</span></p>
+<p>where <span class="math inline">\(N_k\)</span> is the number of distinct plates that contains exactly <span class="math inline">\(k\)</span> number of letters.</p>
+<p><span class="math display">\[
+N_k = {n \choose k} \times a^k \times b^{n-k}
+\]</span></p>
+</section>
+<section id="concept-q2-binomial-theorem" class="slide level2">
+<h2>Concept Q2: Binomial Theorem</h2>
+<p>You are forming a 3 person committee of faculty or students. You can choose from 4 students and 3 faculty:</p>
+<p><span class="math display">\[
+N = (a + b)^n = N_0 + N_1 + \cdots + N_n,
+\]</span></p>
+<p>where <span class="math inline">\(N_k\)</span> is the # of distinct committees with exactly <span class="math inline">\(k\)</span> students.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_2d85940d" data-update-every="1" tabindex="0" style="top:2;right:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+N_k = {n \choose k} \times a^k \times b^{n-k}
+\]</span></p>
+<p>What are <span class="math inline">\(n\)</span>, <span class="math inline">\(a\)</span>, and <span class="math inline">\(b\)</span> in this case? Solve the problem using the <span class="math inline">\(N_k\)</span> formula. When finished, <strong>compare with a neighbor</strong></p>
+</section>
+<section id="multinomial-coefficient" class="slide level2">
+<h2>Multinomial Coefficient</h2>
+<p>A set of <span class="math inline">\(n\)</span> distinct items is to be divided into <span class="math inline">\(r\)</span> distinct groups of respective sizes <span class="math inline">\(n_1, \ldots, n_r\)</span>, where <span class="math inline">\(n_1 + n_2 + \cdots + n_r = n\)</span></p>
+<p>Number of possible divisions is</p>
+<p><span class="math display">\[
+{n \choose n_1, n_2, \ldots, n_r} \stackrel{\text{def}}{=} \frac{n!}{n_1!n_2! \cdots n_r!}
+\]</span></p>
+<p><span class="math display">\[
+{n \choose n_1, n_2, \ldots, n_r} = {n \choose n_1}{n-n_1 \choose n_2}{n-n_1-n_2 \choose n_3}\cdots{n_r \choose n_r}
+\]</span></p>
+</section>
+<section id="concept-q3-multinomial-theorem" class="slide level2">
+<h2>Concept Q3: Multinomial Theorem</h2>
+<p><span class="math display">\[
+(a_1 + a_2 + \cdots + a_r)^n = \sum_{n_1 + \cdots + n_r = n} {n \choose n_1, n_2, \ldots, n_r} a_1^{n_1} a_2^{n_2} \cdots a_r^{n_r}
+\]</span> You have 15 faculty. You need 8 faculty on AAC, 5 faculty on ACM and 2 faculty on Campus Sustainability Committee.</p>
+<p>How many possible combinations do you have?</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_84cc5614" data-update-every="1" tabindex="0" style="top:2.5;right:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -403,19 +470,19 @@ n \times (n-1) \times \cdots 2 \times 1 = n!
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="combination_permutation_contd_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="combination_permutation_contd_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="combination_properties_binomial_multinomial_theorem_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

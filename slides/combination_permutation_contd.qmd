@@ -13,11 +13,9 @@ format: revealjs
 
 How many different outfits can you create with 3 pairs of pants with 4 shirts and 2 pairs of shoes?
 
-
 ```{r}
 countdown::countdown(3, top = 2.5)
 ```
-
 
 ## Permutation Review
 
@@ -29,7 +27,7 @@ $$
 n \times (n-1) \times \cdots 2 \times 1 = n!
 $$
 
-- How many ways could you line up everyone (9 people) in the class?
+-   How many ways could you line up everyone (9 people) in the class?
 
 ## Concept Question: Permutation of r groups of n objects
 
@@ -49,16 +47,14 @@ Working with a partner - write your solution on the board.
 countdown::countdown(3, top = 2.5)
 ```
 
----
+------------------------------------------------------------------------
 
 ## Combinations recap - order doesn't matter practice
 
-- If we have $n$ items and want to select $r$ of them,
-
+-   If we have $n$ items and want to select $r$ of them,
 
 $$
 \binom{n}{r} = \frac{n!}{(n-r)!r!}
 $$
 
-The number ${n \choose r}$ is pronounced as $n$ choose $r$, it is the number of ways to pick
-$r$ objects from a set of $n$ distinct objects.
+The number ${n \choose r}$ is pronounced as $n$ choose $r$, it is the number of ways to pick $r$ objects from a set of $n$ distinct objects.

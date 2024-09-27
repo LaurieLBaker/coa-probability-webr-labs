@@ -1,0 +1,138 @@
+---
+title: "Combination Properties and Binomial and Multinomial Theorem"
+format: revealjs
+---
+
+## Agenda
+
+-   Announcements
+-   Combination Properties
+-   Concept Q - Combination Properties
+-   Binomial Theorem
+-   Concept Q - Binomial Theorem
+-   Multinomial Theorem
+-   Concept Q - Multinomial Theorem
+
+## Combination Properties 1
+
+1.  If choosing a single item out of $n$ possibilities, you have $n$ combinations.
+
+$$
+{n \choose 1} = n
+$$ 
+
+## Combination Properties 2
+
+2. If you have $n$ possibilities and are choosing $n$ items, you have $1$ combination.
+
+$$
+{n \choose n} = 1
+$$
+
+## Combination Properties 3
+
+3. Special $r$ chosen first
+
+$$
+{n \choose r} = {n \choose n - r}
+$$
+
+
+$$
+{n \choose r} = {n-1 \choose r} + {n-1 \choose r-1}, \quad 1\leq r \leq n 
+$$ 
+
+## Concept Q 1
+
+Prove that
+
+$$
+{n \choose n} = 1
+$$
+
+using the combination formula
+
+$$
+\binom{n}{r} = \frac{n!}{(n-r)!r!}
+$$
+
+```{r}
+countdown::countdown(5, top = 2.5)
+```
+
+## Binomial Theorem - Use Cases
+
+![](images/binomial.png){width="700"}
+
+-   Dead or Alive
+
+-   Yellow or Blue
+
+-   On or off
+
+## Binomial Theorem
+
+Think about license plates that are formed by $n$ digits, where each digit can be **either** a letter or a number. $a = 26, b = 10$.
+
+Total number of distinct plates:
+
+$$
+N = (a + b)^n = N_0 + N_1 + \cdots + N_n,
+$$
+
+where $N_k$ is the number of distinct plates that contains exactly $k$ number of letters.
+
+$$
+N_k = {n \choose k} \times a^k \times b^{n-k}
+$$
+
+## Concept Q2: Binomial Theorem
+
+You are forming a 3 person committee of faculty or students. You can choose from 4 students and 3 faculty:
+
+$$
+N = (a + b)^n = N_0 + N_1 + \cdots + N_n,
+$$
+
+where $N_k$ is the # of distinct committees with exactly $k$ students.
+
+
+```{r}
+countdown::countdown(10, top = 2)
+```
+
+$$
+N_k = {n \choose k} \times a^k \times b^{n-k}
+$$
+
+What are $n$, $a$, and $b$ in this case? Solve the problem using the $N_k$ formula. When finished, **compare with a neighbor**
+
+
+## Multinomial Coefficient
+
+A set of $n$ distinct items is to be divided into $r$ distinct groups of respective sizes 
+$n_1, \ldots, n_r$, where $n_1 + n_2 + \cdots + n_r = n$
+
+
+Number of possible divisions is
+
+$$
+{n \choose n_1, n_2, \ldots, n_r} \stackrel{\text{def}}{=} \frac{n!}{n_1!n_2! \cdots n_r!}
+$$
+
+$$
+{n \choose n_1, n_2, \ldots, n_r} = {n \choose n_1}{n-n_1 \choose n_2}{n-n_1-n_2 \choose n_3}\cdots{n_r \choose n_r}
+$$
+
+## Concept Q3: Multinomial Theorem
+
+
+$$
+(a_1 + a_2 + \cdots + a_r)^n = \sum_{n_1 + \cdots + n_r = n} {n \choose n_1, n_2, \ldots, n_r} a_1^{n_1} a_2^{n_2} \cdots a_r^{n_r}
+$$
+You have 15 faculty. You need 8 faculty on AAC, 5 faculty on ACM and 2 faculty on Campus Sustainability Committee. How many possible combinations do you have?
+
+
+```{r}
+countdown::countdown(10, top = 2.5)
+```

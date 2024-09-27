@@ -1,6 +1,6 @@
 ---
 title: "Permutation or combination?"
-date: "2024-09-18"
+date: "2024-10-04"
 format: pdf
 ---
 
@@ -8,8 +8,15 @@ format: pdf
 knitr::opts_chunk$set(fig.align = "center")
 ```
 
-
 ### Questions: Permutation or Combination?
+
+Due October 4, 2024.
+
+Go through the questions and write down whether the questions are permutations or combinations.
+
+Choose 2 permutation and 2 combination problem to solve and show your work.
+
+**Bonus (Win a sticker)**: Write your own permutation and/or combination question (think about some of the use cases we brainstormed in class) and show the solutions.
 
 1.  **Student Club Officers:** A student club needs to elect a president, vice president, and secretary from a group of 7 members. In how many ways can these three officers be chosen?
 
@@ -27,5 +34,4 @@ knitr::opts_chunk$set(fig.align = "center")
 
 8.  **Forming a Mixed Committee:** A new committee is to be formed with 2 faculty members and 3 students from a pool of 6 faculty members and 8 students. How many different committees can be formed?
 
-9. **Arranging Books on a Shelf:** A student has 7 different books and wants to arrange them on a shelf. In how many different ways can the books be arranged?
-
+9.  **Arranging Books on a Shelf:** A student has 7 different books and wants to arrange them on a shelf. In how many different ways can the books be arranged?
