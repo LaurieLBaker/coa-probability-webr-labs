@@ -130,6 +130,10 @@ $$
 $$
 (a_1 + a_2 + \cdots + a_r)^n = \sum_{n_1 + \cdots + n_r = n} {n \choose n_1, n_2, \ldots, n_r} a_1^{n_1} a_2^{n_2} \cdots a_r^{n_r}
 $$
+$$
+{n \choose n_1, n_2, \ldots, n_r} = {n \choose n_1}{n-n_1 \choose n_2}{n-n_1-n_2 \choose n_3}\cdots{n_r \choose n_r}
+$$
+
 You have 15 faculty. You need 8 faculty on AAC, 5 faculty on ACM and 2 faculty on Campus Sustainability Committee. How many possible combinations do you have?
 
 
