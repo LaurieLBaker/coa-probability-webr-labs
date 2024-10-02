@@ -13,3 +13,7 @@
 [Week 2: Combination Permutation Differences Slides - Day 2](slides/combination_permutation_diff.html)
 
 [Week 2: Combination Properties Binomial Multinomial theorem - Day 3](slides/combination_properties_binomial_multinomial_theorem.html)
+
+## Week 3
+
+[Week 3: Conditional Probability Slides - Day 1](slides/conditional_probability.html)
