@@ -70,6 +70,73 @@ After they do this and next, write out the outcome space for the results of flip
 A and B are neither independent nor mutually exclusive.
 :::
 
+
+## Concept Question 1
+
+```{r}
+countdown::countdown(1, bottom = 0)
+```
+
+Flip 3 coins, one at a time. Define the following events:
+
+$A$ is the event that the first coin flipped shows a head
+
+$B$ is the event that the first two coins flipped both show heads
+
+$C$ is the event that the last two coins flipped both show tails
+
+:::{.poll}
+The events A and B are: ________
+:::
+
+
+## Concept Question 1b
+
+```{r}
+countdown::countdown(1, bottom = 0)
+```
+
+Flip 3 coins, one at a time. Define the following events:
+
+$A$ is the event that the first coin flipped shows a head
+
+$B$ is the event that the first two coins flipped both show heads
+
+$C$ is the event that the last two coins flipped both show tails
+
+:::{.poll}
+The events $A$ and $C$ are: ________
+:::
+
+:::{.notes}
+After they do this and next, write out the outcome space for the results of flipping 3 coins. And go through what are A, B, and C.
+A and C are independent. Show that P(A & C ) = 1/8 = P(A)P(C) = 1/2 * 1/4
+
+The possible outcomes of flipping three coins are as follows:
+\[
+\{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}
+\]
+
+Events Described by Outcomes:
+
+- **Event \( A \)**: The first coin is heads. The outcomes that satisfy this condition are:
+  \[
+  A = \{HHH, HHT, HTH, HTT\}
+  \]
+  
+- **Event \( B \)**: The first two coins are both heads. The outcomes that satisfy this condition are:
+  \[
+  B = \{HHH, HHT\}
+  \]
+  
+- **Event \( C \)**: The last two coins are both tails. The outcomes that satisfy this condition are:
+  \[
+  C = \{HTT, TTT\}
+  \]
+
+This setup clearly defines the events \( A \), \( B \), and \( C \) in terms of their corresponding outcomes.
+:::
+
 ## Concept Question 2
 
 ```{r}
