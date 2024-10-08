@@ -10,39 +10,36 @@ format: revealjs
 knitr::include_graphics("https://imgs.xkcd.com/comics/monty_hall.png")
 ```
 
-:::{.notes}
-Of course, this is the Monty Hall problem. The text for this comic is "A few minutes later, the goat behind door C drives away in the car.
-Can have some fun and ask them to if they chose door A and door B had a goat, would they stay with A or would they switch to C? (pollev)
-Setup: There are three doors A, B, C. Car behind one of them, goats behind other two. You pick a door at random (say you pick A), host opens one of the doors you didn't pick (say they open B), and shows you a goat. Now should you stick with your original choice of A or should you switch to C.
-Will be fun to see what they input. The right answer is that they should switch. Waving hands, the total mass of 1 was split 1/3 to 2/3 (win to not win) with the choice of A. A is kept aside, and B is opened.Now the P(A doesn't win) = 2/3 is moved to C. Therefore better to switch. Not worth doing it with formal notation even after going over Bayes 
+::: notes
+Of course, this is the Monty Hall problem. The text for this comic is "A few minutes later, the goat behind door C drives away in the car. Can have some fun and ask them to if they chose door A and door B had a goat, would they stay with A or would they switch to C? (pollev) Setup: There are three doors A, B, C. Car behind one of them, goats behind other two. You pick a door at random (say you pick A), host opens one of the doors you didn't pick (say they open B), and shows you a goat. Now should you stick with your original choice of A or should you switch to C. Will be fun to see what they input. The right answer is that they should switch. Waving hands, the total mass of 1 was split 1/3 to 2/3 (win to not win) with the choice of A. A is kept aside, and B is opened.Now the P(A doesn't win) = 2/3 is moved to C. Therefore better to switch. Not worth doing it with formal notation even after going over Bayes
 :::
 
 ## Agenda
 
-- Concept review
-- Concept questions
-- PS 3 (computing probabilities)
+-   Concept review
+-   Concept questions
+-   PS 3 (computing probabilities)
 
 # Concept review
 
 ## Rules
 
-- Conditional Probabilty
+-   Conditional Probabilty
 
 For two events $A$ and $B$, $P(A \vert B) = \displaystyle \frac{P(A \text{ and } B)}{P(B)}$
 
-- Multiplication rule
+-   Multiplication rule
 
 For two events $A$ and $B$, $P(A \text{ and } B) = P(A \vert B) P(B)$
 
-- Complement rule
+-   Complement rule
 
 $P(A^C) = 1 - P(A)$
 
-:::{.notes}
-You can tell them here that $A^C$ is "not A", and then maybe use dice or coin toss examples. Review mutually exclusive vs independent events, emphasizing that these are very different ideas, though both apply to pairs of events. 
+::: notes
+You can tell them here that $A^C$ is "not A", and then maybe use dice or coin toss examples. Review mutually exclusive vs independent events, emphasizing that these are very different ideas, though both apply to pairs of events.
 
-- Mutually exclusive events means that the occurrence of one event prevents the occurrence of the other. (that is, it reduces the chance of the other occurring to 0.)
+-   Mutually exclusive events means that the occurrence of one event prevents the occurrence of the other. (that is, it reduces the chance of the other occurring to 0.)
 
 Independent events means that the occurrence of one event does not change the chance of the other occurring.
 :::
@@ -61,15 +58,13 @@ $B$ is the event that the first two coins flipped both show heads
 
 $C$ is the event that the last two coins flipped both show tails
 
-:::{.poll}
-The events A and B are: ________
+::: poll
+The events A and B are: \_\_\_\_\_\_\_\_
 :::
 
-:::{.notes}
-After they do this and next, write out the outcome space for the results of flipping 3 coins. And go through what are A, B, and C.
-A and B are neither independent nor mutually exclusive.
+::: notes
+After they do this and next, write out the outcome space for the results of flipping 3 coins. And go through what are A, B, and C. A and B are neither independent nor mutually exclusive.
 :::
-
 
 ## Concept Question 1
 
@@ -85,10 +80,9 @@ $B$ is the event that the first two coins flipped both show heads
 
 $C$ is the event that the last two coins flipped both show tails
 
-:::{.poll}
-The events A and B are: ________
+::: poll
+The events A and B are: \_\_\_\_\_\_\_\_
 :::
-
 
 ## Concept Question 1b
 
@@ -104,37 +98,24 @@ $B$ is the event that the first two coins flipped both show heads
 
 $C$ is the event that the last two coins flipped both show tails
 
-:::{.poll}
-The events $A$ and $C$ are: ________
+::: poll
+The events $A$ and $C$ are: \_\_\_\_\_\_\_\_
 :::
 
-:::{.notes}
-After they do this and next, write out the outcome space for the results of flipping 3 coins. And go through what are A, B, and C.
-A and C are independent. Show that P(A & C ) = 1/8 = P(A)P(C) = 1/2 * 1/4
+::: notes
+After they do this and next, write out the outcome space for the results of flipping 3 coins. And go through what are A, B, and C. A and C are independent. Show that P(A & C ) = 1/8 = P(A)P(C) = 1/2 \* 1/4
 
-The possible outcomes of flipping three coins are as follows:
-\[
-\{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}
-\]
+The possible outcomes of flipping three coins are as follows: \[ {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT} \]
 
 Events Described by Outcomes:
 
-- **Event \( A \)**: The first coin is heads. The outcomes that satisfy this condition are:
-  \[
-  A = \{HHH, HHT, HTH, HTT\}
-  \]
-  
-- **Event \( B \)**: The first two coins are both heads. The outcomes that satisfy this condition are:
-  \[
-  B = \{HHH, HHT\}
-  \]
-  
-- **Event \( C \)**: The last two coins are both tails. The outcomes that satisfy this condition are:
-  \[
-  C = \{HTT, TTT\}
-  \]
+-   **Event ( A )**: The first coin is heads. The outcomes that satisfy this condition are: \[ A = {HHH, HHT, HTH, HTT} \]
 
-This setup clearly defines the events \( A \), \( B \), and \( C \) in terms of their corresponding outcomes.
+-   **Event ( B )**: The first two coins are both heads. The outcomes that satisfy this condition are: \[ B = {HHH, HHT} \]
+
+-   **Event ( C )**: The last two coins are both tails. The outcomes that satisfy this condition are: \[ C = {HTT, TTT} \]
+
+This setup clearly defines the events ( A ), ( B ), and ( C ) in terms of their corresponding outcomes.
 :::
 
 ## Concept Question 2
@@ -143,33 +124,30 @@ This setup clearly defines the events \( A \), \( B \), and \( C \) in terms of 
 countdown::countdown(2, top = 0)
 ```
 
-:::{.poll}
+::: poll
 The Houston Astros beat the Philadelphia Phillies in the 2022 World Series. The winners in the World Series have to win a majority of 7 games, so the first team to win 4 games wins the series (best of 7). The Astros were heavily favored to win, so the outcome wasn't really a suprise. Suppose we assumed that the probability that the Astros would have beaten the Phillies in any single game was estimated at 60%, independently of all the other games. **What was the probability that the Astros would have won in a clean sweep?**
 
 (Clean sweep means that they won in the first 4 games - which didn't happen, they won in 6 games.)
 :::
 
-
-:::{.notes}
-Straightforward application of multiplication rule for independent events. probability is 0.6^4 = 0.1296. Follow up comment/question: if the teams were more evenly matched, say probability of either team winning is 50%, the probability of going to 7 games and probability of winning in 6 games is equal given 5 games are played. 
+::: notes
+Straightforward application of multiplication rule for independent events. probability is 0.6\^4 = 0.1296. Follow up comment/question: if the teams were more evenly matched, say probability of either team winning is 50%, the probability of going to 7 games and probability of winning in 6 games is equal given 5 games are played.
 :::
 
-
 ## Concept Question 3
-
 
 ```{r}
 countdown::countdown(1, top = 0)
 ```
 
-![](images/phillies-astros.jpg){width=300}
+![](images/phillies-astros.jpg){width="300"}
 
-:::{.poll}
+::: poll
 Suppose we assume, instead, that the probability that the Astros would have beaten the Phillies in any single game was 50%, independently of all the other games. In this case, was the probability that the series would have gone to 6 games higher than the probability that the series would have gone to 7 games, **given** that 5 games were played?
 :::
 
-:::{.notes}
-if 5 games are played it means one of the teams is leading 3-2. Therefore there are two scenarios: the team that is ahead wins game 6 and the series, or the team that is behind wins game 6 and they go to 7 games. Both are equally likely. 
+::: notes
+if 5 games are played it means one of the teams is leading 3-2. Therefore there are two scenarios: the team that is ahead wins game 6 and the series, or the team that is behind wins game 6 and they go to 7 games. Both are equally likely.
 :::
 
 # PS 3

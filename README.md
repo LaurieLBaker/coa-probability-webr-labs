@@ -17,3 +17,7 @@
 ## Week 3
 
 [Week 3: Conditional Probability Slides - Day 1](slides/conditional_probability.html)
+
+## Week 4
+
+[Week 4: Probability Tables and Distributions - Day 1](slides/prob_tables_distributions.html)
