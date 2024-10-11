@@ -33,13 +33,13 @@ library(patchwork)
 
 :::
 
-## Random variables contd
+<!-- ## Random variables contd -->
 
-:::{.incremental}
-- Now suppose we toss a fair coin until the first time it lands heads, and let $X$ be the number of tosses (including the last one, which is the first time the coin lands heads). What is the pmf of $X$? Is it binomial?
+<!-- :::{.incremental} -->
+<!-- - Now suppose we toss a fair coin until the first time it lands heads, and let $X$ be the number of tosses (including the last one, which is the first time the coin lands heads). What is the pmf of $X$? Is it binomial? -->
 
-- Finally, let's consider a deck of cards, and we are interested in the number of hearts dealt in a hand of five. Call this number $X$. What is the pmf of $X$?
-:::
+<!-- - Finally, let's consider a deck of cards, and we are interested in the number of hearts dealt in a hand of five. Call this number $X$. What is the pmf of $X$? -->
+<!-- ::: -->
 
 :::{.notes}
 Write out outcome space of 3 coin flips of a fair coin and use this to define rv X = number of heads. Write out the pmf and cdf, and draw the cdf. Show why $X$ is binomial and what are $n$ and $p$
