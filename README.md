@@ -21,3 +21,6 @@
 ## Week 4
 
 [Week 4: Probability Tables and Distributions - Day 1](slides/prob_tables_distributions.html)
+
+[Week 4: Probability Tables and Distributions - Day 3](slides/random_variables.html)
+
