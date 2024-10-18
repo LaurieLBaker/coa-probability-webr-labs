@@ -211,14 +211,10 @@ Working in pairs:
 
 ## CNN vs. the Onion Survey
 
-Let's generate our own Binomial data. 
-
-- Fill out the survey and tally the number of CNN articles you guessed and write it on the board.
-- Create the probability table.
-- Draw the probability histogram.
+Work through the hand out and take the quiz. When you are done with the quiz, let me know and I will read out the correct answers which you'll need for later steps.
 
 ```{r}
-countdown::countdown(10, bottom = -1)
+countdown::countdown(20, bottom = -1)
 ```
 
 ## CNN vs. the Onion in Code
@@ -235,6 +231,8 @@ countdown::countdown(10, bottom = -1)
 
 ## What might the process generating our data be?
 
+**Bonus**
+
 - Use `rbinom` to generate our class survey results. What should n, size be?
 - Try out values for `prob` to see if you can generate something close to our data.
 - Create a probability and histogram to look at the results. 
@@ -243,9 +241,7 @@ countdown::countdown(10, bottom = -1)
 countdown::countdown(10, bottom = -1)
 ```
 
-
-
-# PS 5 
+# PS 4 or 5 
 
 ```{r}
 countdown::countdown(25, top = 0)
