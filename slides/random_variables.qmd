@@ -205,6 +205,45 @@ Working in pairs:
 - Create a probability distribution table from the results
 - Create a column plot of the probability distribution. Hint you'll need to adapt the code from yesterday to calculate the proportion.
 
+## CNN vs. the Onion
+
+<iframe src="https://theonion.com/" title="The Onion" width="100%" height="100%"></iframe>
+
+## CNN vs. the Onion Survey
+
+Let's generate our own Binomial data. 
+
+- Fill out the survey and tally the number of CNN articles you guessed and write it on the board.
+- Create the probability table.
+- Draw the probability histogram.
+
+```{r}
+countdown::countdown(10, bottom = -1)
+```
+
+## CNN vs. the Onion in Code
+
+- Store everyone's data in a vector called: `headlines`. Hint you'll want to use the syntax: `my_data <- c(value1, value2, value3, ...)`
+- Create a data frame with the data called: `headlines_df`. Hint you'll want to use the syntax: `my_data_frame <- data.frame(my_data)`
+- Follow the steps from Wednesday and in the notes to create a probability table using `group_by` and `summarize`
+- Adapt the ggplot code to create a histogram.
+
+```{r}
+countdown::countdown(10, bottom = -1)
+```
+
+
+## What might the process generating our data be?
+
+- Use `rbinom` to generate our class survey results. What should n, size be?
+- Try out values for `prob` to see if you can generate something close to our data.
+- Create a probability and histogram to look at the results. 
+
+```{r}
+countdown::countdown(10, bottom = -1)
+```
+
+
 
 # PS 5 
 
