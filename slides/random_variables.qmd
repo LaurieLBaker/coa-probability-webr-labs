@@ -3,7 +3,6 @@ title: "Random Variables"
 format: revealjs
 ---
 
-
 ```{r}
 #| echo: false
 #| message: false
@@ -16,53 +15,47 @@ library(patchwork)
 
 ## Agenda
 
-- Recap of Random Variables
-- Concept Questions
-- Problem Set 4 Time
+-   Recap of Random Variables
+-   Concept Questions
+-   Problem Set 4 Time
 
 ## Random variables Recap
 
-- Some notes and definitions on the board.
+-   Some notes and definitions on the board.
 
-## Random variables 
+## Random variables
 
-:::{.incremental}
-- Let $X$ be the number of heads in three tosses of a fair coin. What is the distribution of $X$? That is, what is $f(x) = P(X = x)$? What values will $x$ take?
+::: incremental
+-   Let $X$ be the number of heads in three tosses of a fair coin. What is the distribution of $X$? That is, what is $f(x) = P(X = x)$? What values will $x$ take?
 
-- What about if $X$ is the number of heads in 3 tosses of a biased coin, where the chance of heads is $\frac{2}{3}$? Now what is $f(x) = P(X = x)$?
-
+-   What about if $X$ is the number of heads in 3 tosses of a biased coin, where the chance of heads is $\frac{2}{3}$? Now what is $f(x) = P(X = x)$?
 :::
 
-:::{.notes}
+::: notes
 Write out outcome space of 3 coin flips of a fair coin and use this to define rv X = number of heads. Write out the pmf and cdf, and draw the cdf. Show why $X$ is binomial and what are $n$ and $p$
 
 Show what happens if coin is unfair. How the probabilities change.
 
-Demo dbinom and pbinom and connection to pmf and cdf.
-Show how we can use rbinom to get an empirical histogram for three flips of fair or biased coin.
-
+Demo dbinom and pbinom and connection to pmf and cdf. Show how we can use rbinom to get an empirical histogram for three flips of fair or biased coin.
 :::
 
 ## $f(x)$ and $F(x)$
 
+::: incremental
+-   $f(x)$ is the probability mass function of $X$. What does that mean? What is the connection to the distribution table? The probability histogram?
 
-:::{.incremental}
+-   $F(x)$ is the cumulative distribution function.
 
-- $f(x)$ is the probability mass function of $X$. What does that mean? What is the connection to the distribution table? The probability histogram?
-
-- $F(x)$ is the cumulative distribution function. 
-
-- What is the connection between $f$ and $F$?
-
+-   What is the connection between $f$ and $F$?
 :::
 
-:::{.notes}
+::: notes
 Draw an example on the board. Maybe box of tickets { 0, 0, 0 , 1, 1, 2, 2, 2} draw one ticket, and let $X$ be the value of the ticket. Write out both $f(x)$ and $F(x)$ in function notation, then draw the cdf and show how we can get from the cdf to the pmf.
 :::
 
 # Concept Questions
 
-##
+## 
 
 ```{r}
 countdown::countdown(1, bottom = 0)
@@ -121,9 +114,8 @@ x4 <- rpois(500, 4)
    (p4+p1+p3+p2)  
 ```
 
-:::{.notes}
-explain the smaller the rate, the lower the probability of higher values. 
-A-4, B-1, C-3, D-2
+::: notes
+explain the smaller the rate, the lower the probability of higher values. A-4, B-1, C-3, D-2
 :::
 
 ## 
@@ -132,19 +124,17 @@ A-4, B-1, C-3, D-2
 countdown::countdown(1, bottom = 0)
 ```
 
-Roll a pair of fair six-sided dice and let $X = 1$ if the dice land showing the same number of spots, and $0$ otherwise. For example, if both dice land $2$, then $X = 1$, but if one lands $2$ and the other lands $3$, then $X = 0$. 
+Roll a pair of fair six-sided dice and let $X = 1$ if the dice land showing the same number of spots, and $0$ otherwise. For example, if both dice land $2$, then $X = 1$, but if one lands $2$ and the other lands $3$, then $X = 0$.
 
-:::{.poll}
-What is $P(X=1)$? 
+::: poll
+What is $P(X=1)$?
 :::
 
-
-
-:::{.notes}
+::: notes
 The chance that $X = 1$ can be broken up into six mutually exclusive situations, that the dice both show one spot, or both show two spots, etc. Each of these has probability $1/36$ so the total probability by the addition rule is $6/36 = 1/6$
 :::
 
-##
+## 
 
 ```{r}
 countdown::countdown(1, bottom = 0)
@@ -154,11 +144,9 @@ The graph of the cdf of a random variable $X$ is shown below. What is $F(2)$? Wh
 
 ![](images/rq-rv-cdf.png){fig-align="center" width="500"}
 
-
-:::{.notes}
+::: notes
 $F(2) = 2/3, f(2) = 0$
 :::
-
 
 ## 
 
@@ -168,18 +156,15 @@ countdown::countdown(3, bottom = 0)
 
 You have $10$ people with a cold and you have a remedy with a $20\%$ chance of success. What is the chance that your remedy will cure at least *one* sufferer? (Let $X$ be the number of people cured among the 10. We are looking for the probability that $X \ge 1$)
 
-
-:::{.poll}
+::: poll
 What is the chance that at least one person is cured?
 :::
 
-:::{.notes}
+::: notes
 $P(X \ge 1) = 1 - P(X < 1) = 1 - P(X = 0) = 1 - (1-p)^{10}$, where $p = 0.2$, because $X \sim Bin(10, p)$. $1-p = 0.8 \: \& \: 1-0.8^{10} = 0.8926$
 :::
 
-
 ## Ideas in Code
-
 
 ```{r}
 countdown::countdown(10, bottom = 0)
@@ -187,9 +172,9 @@ countdown::countdown(10, bottom = 0)
 
 Working in pairs:
 
-- Simulate 100 trials where you toss a coin 6 times. There is a 75% probability of getting heads.
-- Create a probability distribution table from the results
-- Create a column plot of the probability distribution. Hint you'll need to adapt the code from yesterday to calculate the proportion.
+-   Simulate 100 trials where you toss a coin 6 times. There is a 75% probability of getting heads.
+-   Create a probability distribution table from the results
+-   Create a column plot of the probability distribution. Hint you'll need to adapt the code from yesterday to calculate the proportion.
 
 ## Ideas in Code
 
@@ -197,56 +182,43 @@ Working in pairs:
 countdown::countdown(10, bottom = -1)
 ```
 
-
 Working in pairs:
 
-- Simulate 100 bird sitings data where the rate parameter $\lambda$ is 25. Then simulate 100 whale sitings data where the rate parameter $\lambda$ is 1.5.
-- Choose either the simulation of whales or birds and
-- Create a probability distribution table from the results
-- Create a column plot of the probability distribution. Hint you'll need to adapt the code from yesterday to calculate the proportion.
+-   Simulate 100 bird sitings data where the rate parameter $\lambda$ is 25. Then simulate 100 whale sitings data where the rate parameter $\lambda$ is 1.5.
+-   Choose either the simulation of whales or birds and
+-   Create a probability distribution table from the results
+-   Create a column plot of the probability distribution. Hint you'll need to adapt the code from yesterday to calculate the proportion.
 
 ## CNN vs. the Onion
 
-<iframe src="https://theonion.com/" title="The Onion" width="100%" height="100%"></iframe>
+<iframe src="https://theonion.com/" title="The Onion" width="100%" height="100%">
+
+</iframe>
 
 ## CNN vs. the Onion Survey
 
-Work through the hand out and take the quiz. When you are done with the quiz, let me know and I will read out the correct answers which you'll need for later steps.
+Take the quiz. When you are done with the quiz, let me know and I will read out the correct answers which you'll need for later steps.
 
 ```{r}
-countdown::countdown(20, bottom = -1)
+countdown::countdown(5, bottom = -1)
 ```
 
-## CNN vs. the Onion in Code
+## Hints for CNN vs. the Onion in Code
 
-- Store everyone's data in a vector called: `headlines`. Hint you'll want to use the syntax: `my_data <- c(value1, value2, value3, ...)`
-- Create a data frame with the data called: `headlines_df`. Hint you'll want to use the syntax: `my_data_frame <- data.frame(my_data)`
-- Follow the steps from Wednesday and in the notes to create a probability table using `group_by` and `summarize`
-- Adapt the ggplot code to create a histogram.
+-   Store everyone's data in a vector called: `headlines`. Hint you'll want to use the syntax: `my_data <- c(value1, value2, value3, ...)`
+-   Create a data frame with the data called: `headlines_df`. Hint you'll want to use the syntax: `my_data_frame <- data.frame(my_data)`
+-   Follow the steps from Wednesday and in the notes to create a probability table using `group_by` and `summarize`
+-   Adapt the ggplot code to create a histogram.
 
 ```{r}
-countdown::countdown(10, bottom = -1)
+countdown::countdown(25, bottom = -1)
 ```
 
-
-## What might the process generating our data be?
-
-**Bonus**
-
-- Use `rbinom` to generate our class survey results. What should n, size be?
-- Try out values for `prob` to see if you can generate something close to our data.
-- Create a probability and histogram to look at the results. 
-
-```{r}
-countdown::countdown(10, bottom = -1)
-```
-
-# PS 4 or 5 
+# PS 4 or 5
 
 ```{r}
 countdown::countdown(25, top = 0)
 ```
-
 
 ## Acknowledgements
 

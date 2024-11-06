@@ -24,3 +24,6 @@
 
 [Week 4: Probability Tables and Distributions - Day 3](slides/random_variables.html)
 
+## Week 8
+
+[Week 8: Random Variables Continuous - Day 2](slides/random_variables_continuous.html)
