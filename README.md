@@ -27,3 +27,7 @@
 ## Week 8
 
 [Week 8: Random Variables Continuous - Day 2](slides/random_variables_continuous.html)
+
+## Week 9
+
+[Week 9: Sampling Distributions - Day 1](slides/sampling_distributions.html)

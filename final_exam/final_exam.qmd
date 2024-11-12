@@ -1,0 +1,230 @@
+---
+title: "Final Exam - Fall 2024"
+format: pdf
+---
+
+## Probability Fundamentals
+
+Consider a nine sided die (with sides 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9). You roll this die once. Let:
+
+-   A be the event that a given roll yields an even number (this includes 0).   
+-   B be the event that a given roll is greater than or equal to three.   
+-   C be the event that the number appears in the song title "867-5309/Jenny" by Tommy Tutone.
+
+@. Find $\text{P}(A)$, $\text{P}(B)$ and $\text{P}(C)$
+
+  \
+  
+  \
+  
+@. Find $\text{P}(A \cup B)$ 
+
+  \
+  
+  \
+  
+@. Find $\text{P}(B \cap C)$
+
+  \
+  
+  \
+  
+@. Find $\text{P}(A \cap B^C)$
+
+  \
+  
+  \
+
+  \
+
+One ticket will be drawn at random from each of the two boxes below:
+
+\begin{center}
+$A: \fbox{\fbox{0}\fbox{1} \fbox{2} \fbox{3}}$ $\hspace{1cm}$ $B: \fbox{ \fbox{2} \fbox{3} \fbox{4} \fbox{5}}$
+\end{center}
+
+@. What is the probability the number drawn from $A$ is greater than the one drawn from $B$?
+
+   \
+   
+   \
+
+@. What is the probability that the number drawn from $A$ is equal to the one drawn from $B$?
+
+   \
+   
+   \
+
+@. What is the probability the number drawn from $A$ is smaller than the one drawn from $B$?
+
+{{< pagebreak >}}
+   
+@. Consider the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$. I draw two tickets at random **with** replacement. If my first draw is a 2, what is the probability that my second draw is a 3?
+
+\
+
+\
+
+@. Consider the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$. I draw two tickets at random **without** replacement. If my first draw is a 2, what is the probability that my second draw is a 3?
+
+\
+
+\
+
+
+Return to the example of the nine-sided die from earlier in this problem set. Write code in R (and write the code below) to:
+
+@. Simulate rolling the nine-sided die once.
+
+  \
+  
+@. Simulate rolling the nine-sided die seven times.
+
+  \
+  
+@. Write the line of code which will ensure that you receive the same sample each time you run the code.
+
+
+## Computing Probabilities
+
+Consider picking numbers from the following box.
+
+\begin{center}
+$\fbox{\fbox{0} \fbox{1} \fbox{2} \fbox{3}}$ $\hspace{1cm}$ 
+\end{center}
+
+Let $A$ be the event that the *first pick* yields an even number; $B$ be the event that the *second pick* is greater than or equal to one. 
+
+@. Pick two numbers without replacement. Find $\text{P}(B|\text{first pick is 0})$.
+
+\
+
+
+@. Pick two numbers without replacement. Find $\text{P}(B|\text{first pick is 2})$.
+
+\
+
+@. Pick two numbers with replacement. Find  $\text{P}(B|A)$.
+
+\
+
+
+Consider a fair, eight-sided die. 
+
+@. I roll the die four times. What is the probability that I roll the **same** number on all four rolls? 
+
+\
+
+\
+
+@. I roll the die twice. What is the probability that the rolls are **different**?
+
+\
+
+\
+
+
+<!---
+Consider the events $A$ and $B$ which have probabilities $0.6$ and $0.5$ respectively, and we further have that $P(A \cup B) = 0.8$. 
+
+
+@. Are $A$ and $B$ mutually exclusive? If not, what is $P(A \cap B)$?
+
+\
+
+\
+
+@. What is the probability that *neither* $A$ *nor* $B$ will be true? Drawing a Venn diagram will be helpful here.
+
+\
+
+\
+-->
+  
+
+
+
+Maganga loves to read books from two genres: mystery and science fiction*. Each time Maganga picks a book to read, they choose independently of previous choices (like a coin toss). That week, they had limited time, so they picked a book to read on only three separate days.
+
+*N.B. Maganga owns no books that are both mystery and science fiction.
+
+Define the events $A$ and $B$ where:
+
+$A$ is the event that Maganga picked a mystery book *more than once* that week; 
+
+$B$ is the event that the books Maganga picked that week included *both* a mystery and science fiction book.
+
+@. Find $P(A)$, $P(B)$, $P(A \cup B)$, and $P(B \cup A)$.
+
+\
+
+\
+
+\
+
+\
+
+@. Are $A$ and $B$ independent? 
+
+\
+
+\
+
+\
+
+\
+\newpage
+
+
+An American roulette wheel has 38 pockets, of which 18 are red, 18 black, and 2 are green. In each round, the wheel is spun and a white ball lands in one of these 38 pockets.
+
+@. What is the probability of getting at the ball landing in a green pocket at least once in 5 spins of the wheel?
+
+\
+
+\
+
+
+A European roulette wheel has 37 pockets, of which 18 are red, 18 black, *and only 1 green*. The roulette wheel is numbered 0 through 36. 
+
+@. Write R code to simulate three spins of this wheel. 
+
+\
+
+@. Now imagine that after each of the three spins, a pocket disappears. Simulate three spins of this magic wheel. 
+
+\
+
+We will now perform our first simulation of the year! For the following questions, consider the European roulette wheel of **Question 7** and ensure your Quarto document will present the same results each time it is rendered. Write your code in the spaces below.
+
+@. Create three vectors: one which contains 100 simulated spins of the European roulette wheel (call this `one_hundred`), one which contains 1,000 such spins (call this `one_thousand`), and another which contains 10,000 such spins (call this `ten_thousand`). 
+
+\
+
+\
+
+@. Create a new vector that returns `TRUE`/`FALSE` values for each element in `one_hundred`, where `TRUE` means that the number spun is greater than 18, and save it. Repeat these steps for the `one_thousand` and `ten_thousand` vectors.
+
+\
+
+\
+
+@. Find the proportion of numbers spun in each simulation that were greater than 18 (write the code and the proportion). *Hint: how can you take a proportion of a logical vector?*
+
+\
+
+\
+
+@. Comment on how the proportions changed with respect to the true probability of spinning a number greater than 18 as the number of spins increased. 
+
+
+@. Suppose $A$ and $B$ are non-empty events such that $P(A) = 0.5$ and $P(B) = 0.7$.  What is the smallest and biggest that their union, $P(A \cup B)$, and their intersection, $P(A \cap B)$, can be?
+
+\
+
+
+\
+
+\
+
+-->
