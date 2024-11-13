@@ -1,7 +1,36 @@
 ---
-title: "Final Exam - Fall 2024"
+title: "Probability Final Exam - Fall 2024"
 format: pdf
 ---
+
+## Permutations and Combinations
+
+@. A chef has 10 different herbs in their kitchen. They want to create a special blend by choosing 4 herbs, but the order in which the herbs are chosen doesn't matter. How many blends of 4 herbs can the chef create from the 10?
+
+
+\
+
+
+
+@. At a music festival, there are 7 different musicians available to perform in a specific order on stage. The organizer needs to select 3 musicians to play the first, second, and third. How many possible arrangements are there for the organizer to choose and arrange 3 musicians out of the 7?
+
+
+\
+
+
+
+@. An ecology class has 12 students, and they are creating a team of 3 students to monitor a local wetland area. The order in which members are chosen for the team doesn't matter. How many different teams of 3 students can the professor form from its 12 students?
+
+
+\
+
+\
+
+
+@. COA is forming a committee to lead the design of a new arts center, which will consist of 7 members: 2 faculty members, 3 students, and 2 staff. If there are 8 faculty members, 12 students, and 8 staff available, how many ways can the committee be formed if it must include exactly 2 faculty, 3 students, and 2 staff?
+
+
+{{< pagebreak >}}
 
 ## Probability Fundamentals
 
@@ -23,19 +52,20 @@ Consider a nine sided die (with sides 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9). You rol
   
   \
   
+  \
+  
 @. Find $\text{P}(B \cap C)$
 
   \
   
   \
   
-@. Find $\text{P}(A \cap B^C)$
-
   \
   
-  \
+@. Find $\text{P}(A \cap B^C)$
 
-  \
+
+{{< pagebreak >}}
 
 One ticket will be drawn at random from each of the two boxes below:
 
@@ -57,7 +87,10 @@ $A: \fbox{\fbox{0}\fbox{1} \fbox{2} \fbox{3}}$ $\hspace{1cm}$ $B: \fbox{ \fbox{2
 
 @. What is the probability the number drawn from $A$ is smaller than the one drawn from $B$?
 
-{{< pagebreak >}}
+   \
+   
+   \
+
    
 @. Consider the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$. I draw two tickets at random **with** replacement. If my first draw is a 2, what is the probability that my second draw is a 3?
 
@@ -67,23 +100,25 @@ $A: \fbox{\fbox{0}\fbox{1} \fbox{2} \fbox{3}}$ $\hspace{1cm}$ $B: \fbox{ \fbox{2
 
 @. Consider the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$. I draw two tickets at random **without** replacement. If my first draw is a 2, what is the probability that my second draw is a 3?
 
-\
+{{< pagebreak >}}
 
-\
-
-
-Return to the example of the nine-sided die from earlier in this problem set. Write code in R (and write the code below) to:
-
-@. Simulate rolling the nine-sided die once.
+@. Write the code to simulate in R choosing one ticket from the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$ **without replacement**.
 
   \
   
-@. Simulate rolling the nine-sided die seven times.
+  \
+
+@. Write the code to simulate in R choosing five tickets from the box $\fbox{ \fbox{1} \fbox{2} \fbox{2} \fbox{3} \fbox{4}}$ **with replacement**.
 
   \
   
+  \
+
 @. Write the line of code which will ensure that you receive the same sample each time you run the code.
 
+  \
+  
+  \
 
 ## Computing Probabilities
 
@@ -108,45 +143,20 @@ Let $A$ be the event that the *first pick* yields an even number; $B$ be the eve
 
 \
 
+\
+
 
 Consider a fair, eight-sided die. 
 
-@. I roll the die four times. What is the probability that I roll the **same** number on all four rolls? 
+
+@. I roll the die four times. What is the probability that the rolls are **not all the same** (e.g. No roll with 1, 1, 1, 1; 2, 2, 2, 2 etc.)?
 
 \
 
 \
 
-@. I roll the die twice. What is the probability that the rolls are **different**?
 
-\
-
-\
-
-
-<!---
-Consider the events $A$ and $B$ which have probabilities $0.6$ and $0.5$ respectively, and we further have that $P(A \cup B) = 0.8$. 
-
-
-@. Are $A$ and $B$ mutually exclusive? If not, what is $P(A \cap B)$?
-
-\
-
-\
-
-@. What is the probability that *neither* $A$ *nor* $B$ will be true? Drawing a Venn diagram will be helpful here.
-
-\
-
-\
--->
-  
-
-
-
-Maganga loves to read books from two genres: mystery and science fiction*. Each time Maganga picks a book to read, they choose independently of previous choices (like a coin toss). That week, they had limited time, so they picked a book to read on only three separate days.
-
-*N.B. Maganga owns no books that are both mystery and science fiction.
+@. Maganga loves to read books from two genres: mystery and science fiction*. Each time Maganga picks a book to read, they choose independently of previous choices (like a coin toss). That week, they had limited time, so they picked a book to read on only three separate days. N.B. Maganga owns no books that are both mystery and science fiction.
 
 Define the events $A$ and $B$ where:
 
@@ -162,69 +172,136 @@ $B$ is the event that the books Maganga picked that week included *both* a myste
 
 \
 
-\
 
-@. Are $A$ and $B$ independent? 
+@. Are $A$ and $B$ independent? Justify your answer with a sentence or two and refer to your work above.
 
-\
 
-\
-
-\
-
-\
 \newpage
 
 
 An American roulette wheel has 38 pockets, of which 18 are red, 18 black, and 2 are green. In each round, the wheel is spun and a white ball lands in one of these 38 pockets.
 
-@. What is the probability of getting at the ball landing in a green pocket at least once in 5 spins of the wheel?
+@. What is the probability of getting at the ball landing in a red pocket at least once in 5 spins of the wheel?
+
+\
+
+\
+
+@. Write R code to simulate six spins of this wheel. 
+
+\
+
+
+## Probability Distributions
+
+Imagine a bag with five pieces of treasure in it, three of which are emeralds (green) and one ruby (red). The treasure pieces are identical in shape and size; only their colors differ. Now suppose we draw three times at random (meaning each piece is equally likely to be drawn) from this bag. For each of the following scenarios, list all the possible outcomes, and make **a table** and sketch **a probability histogram** showing the probability distribution of these outcomes.
+
+@. We draw *with* replacement.
+
+\
+
+\
+
+\
+
+\
+
+@. We draw *without* replacement.
+
+\
+
+\
+
+{{< pagebreak >}}
+
+## Random Variables
+
+For the box below, draw one ticket at random, and let $X$ be the value of the ticket that you draw. 
+
+@. \fbox{\fbox{-2} \fbox{-1} \fbox{-1} \fbox{1} \fbox{2}}
+
+Write down the pmf, and draw the graph of the cdf of $X$.
+
+\
+
+\
+
+\
+
+
+\
+
+\
+
+Suppose  $X \sim$ Poisson$(4)$, where $X$ represents the number of buses that arrive at a particular stop within an hour.
+
+@. What is the probability that *no buses* arrive at the stop within the hour? After writing the expression for this probability, compute it in R using an appropriate function, and copy your code here.
+
+\
+
+\
+
+\
+
+@. What is the probability that *at least three buses* arrive at the stop within the hour? Compute the probability in R using an appropriate function, and copy your code here.
+
+
+## Expectation and Variance
+
+@. Let $X$ be a Discrete Uniform random variable on $[-3, -1, 0, 1, 4].$ Let $Y = X^2$. Find $\mathbb{E}(Y)$. 
+
+\
+
+\
+
+\
+
+Find $\mathbb{Var}(Y)$.
+
+\
+
+\
+
+\
+
+Imagine you’re tossing a basketball at a hoop 15 times, aiming to score a basket. In each attempt, there’s a probability of landing a successful shot, which depends on your skill and accuracy. You haven't been practicing basketball very much lately, so your probability of making a shot is only 30%. 
+
+@. Let $S$ be the number of times in 15 shots that your basketball goes in the basket. Calculate $\mathbb{E}(S)$, $Var(S)$ and $SD(S)$.
+
+\
+
+\
+
+\
+
+@. Write R code which will allow you to simulate 15 shots (where your possible outcome is that you either make the shot *successful* or not *unsuccessful shot*), and count the number of successful shots.
+
+\
+
+\
+
+@. Write R code which will allow you to simulate 100 of these experiments (so 100 experiments, each featuring 15 shots, and the number of successful shots is counted in each experiment). Your output should be a vector called `basketball_shots_made` with 100 observations, where the first element is the number of successful shots landed on in experiment one, and so on.
 
 \
 
 \
 
 
-A European roulette wheel has 37 pockets, of which 18 are red, 18 black, *and only 1 green*. The roulette wheel is numbered 0 through 36. 
-
-@. Write R code to simulate three spins of this wheel. 
-
-\
-
-@. Now imagine that after each of the three spins, a pocket disappears. Simulate three spins of this magic wheel. 
-
-\
-
-We will now perform our first simulation of the year! For the following questions, consider the European roulette wheel of **Question 7** and ensure your Quarto document will present the same results each time it is rendered. Write your code in the spaces below.
-
-@. Create three vectors: one which contains 100 simulated spins of the European roulette wheel (call this `one_hundred`), one which contains 1,000 such spins (call this `one_thousand`), and another which contains 10,000 such spins (call this `ten_thousand`). 
+@. Write R code to calculate the mean, variance and standard deviation of the vector you created in the last step. Copy it below.
 
 \
 
 \
 
-@. Create a new vector that returns `TRUE`/`FALSE` values for each element in `one_hundred`, where `TRUE` means that the number spun is greater than 18, and save it. Repeat these steps for the `one_thousand` and `ten_thousand` vectors.
-
-\
-
-\
-
-@. Find the proportion of numbers spun in each simulation that were greater than 18 (write the code and the proportion). *Hint: how can you take a proportion of a logical vector?*
-
-\
-
-\
-
-@. Comment on how the proportions changed with respect to the true probability of spinning a number greater than 18 as the number of spins increased. 
 
 
-@. Suppose $A$ and $B$ are non-empty events such that $P(A) = 0.5$ and $P(B) = 0.7$.  What is the smallest and biggest that their union, $P(A \cup B)$, and their intersection, $P(A \cap B)$, can be?
+Human reaction times are often modeled with a normal distribution. For simple tasks (like pressing a button in response to a visual cue) tend to have a mean of 250 ms and a standard deviation of 50 ms.
 
-\
+@. Using an appropriate R function, calculate the proportion of people who have a reaction time faster than 150 ms (i.e. less than 150 ms). Next calculate the proportion of people who have a reaction time slower than 250 ms (i.e. more than 250 ms). Write the R code here.
+
+  \
+  
+  \ 
 
 
-\
-
-\
-
--->
+@. Using an appropriate R function, generate 100 reaction times and calculate the mean and standard deviation of the vector created. Write the R code here and make sure to include code that will make your simulation repeatable.
